@@ -4,7 +4,8 @@
     "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
     "pages/example/js",
     "pages/example/template",
-    "uview-ui/components/u-full-screen/u-full-screen"
+    "uview-ui/components/u-full-screen/u-full-screen",
+    "pages/auth/login"
   ],
   "subPackages": [
     {
@@ -181,6 +182,5 @@
       ]
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

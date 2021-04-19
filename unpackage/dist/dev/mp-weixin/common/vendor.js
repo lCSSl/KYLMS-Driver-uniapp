@@ -13152,6 +13152,8 @@ var store = new _vuex.default.Store({
     // 如果vuex_version无需保存到本地永久存储，无需lifeData.vuex_version方式
     vuex_version: '1.0.1',
     vuex_demo: '绛紫',
+    access_token: '',
+    expires_in: '',
     // 自定义tabbar数据
     vuex_tabbar: [{
       iconPath: "/static/uview/example/component.png",
@@ -14400,8 +14402,9 @@ var t, e;t = this, e = function e() {"use strict";var t = ["style", "currency", 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 这里的vm，就是我们在vue文件里面的this，所以我们能在这里获取vuex的变量，比如存放在里面的token
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 这里的vm，就是我们在vue文件里面的this，所以我们能在这里获取vuex的变量，比如存放在里面的token
 // 同时，我们也可以在此使用getApp().globalData，如果你把token放在getApp().globalData的话，也是可以使用的
+var whileList = ['/system/sms/code', '/auth/login', '/auth/user/mobile'];
 var install = function install(Vue, vm) {
   Vue.prototype.$u.http.setConfig({
     baseUrl: 'http://localhost:8080'
@@ -14416,7 +14419,18 @@ var install = function install(Vue, vm) {
   // 请求拦截，配置Token等参数
   Vue.prototype.$u.http.interceptor.request = function (config) {
     config.header.Token = 'xxxxxx';
+    var accessToken = vm.access_token;
+    var expiresIn = vm.expires_in;
+    console.log(accessToken, expiresIn);
+    if (accessToken) {
+      config.header = { 'Authorization': "Bearer ".concat(accessToken) };
+    }
+    if (whileList.indexOf(config.url) === -1 && !accessToken) {
+      //跳转到登录页
+      return uni.navigateTo({
+        url: '/pages/auth/login' });
 
+    }
     // 方式一，存放在vuex的token，假设使用了uView封装的vuex方式，见：https://uviewui.com/components/globalVariable.html
     // config.header.token = vm.token;
 
@@ -14445,6 +14459,7 @@ var install = function install(Vue, vm) {
 
 {
   install: install };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

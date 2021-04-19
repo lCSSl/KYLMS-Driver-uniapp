@@ -199,9 +199,7 @@ var _default =
   },
   methods: {
     getGet: function getGet() {var _this = this;
-      this.$u.get('/ebapi/store_api/hot_search', {
-        id: 2 }).
-      then(function (res) {
+      this.$u.get('/system/user/getInfo').then(function (res) {
         _this.result = res;
       });
     },
