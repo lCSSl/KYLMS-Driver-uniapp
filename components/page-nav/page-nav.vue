@@ -10,7 +10,7 @@
           司机 {{user.nickName}}，你好
         </view>
         <view class="nav-slogan">
-          {{$t( 'common.intro' )}}
+<!--          {{$t( 'common.intro' )}}-->
         </view>
       </view>
     </view>
