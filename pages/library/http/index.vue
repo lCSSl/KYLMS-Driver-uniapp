@@ -35,7 +35,7 @@
 		},
 		methods: {
 			getGet() {
-				this.$u.get('/system/user/getInfo').then(res => {
+				this.$u.get('/system/user/getDriverInfo').then(res => {
 					this.result = res;
 				})
 			},

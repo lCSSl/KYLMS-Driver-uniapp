@@ -26,8 +26,7 @@
 .item .title.data-v-fa22c0ca:before {
   width: 4px;
   height: 15px;
-  -webkit-border-radius: 100rpx;
-          border-radius: 100rpx;
+  border-radius: 100rpx;
   background-color: #606266;
   content: '';
   position: absolute;
@@ -60,8 +59,7 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
-  -webkit-border-radius: 6rpx;
-          border-radius: 6rpx;
+  border-radius: 6rpx;
   padding: 12rpx 0;
 }
 .item .color-box .color-title.data-v-fa22c0ca {

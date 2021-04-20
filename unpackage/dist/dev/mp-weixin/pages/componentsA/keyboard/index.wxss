@@ -6,16 +6,14 @@
  */
 .input.data-v-2e66f0f2 {
   border: 1px solid #c0c4cc;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   margin-bottom: 20px;
   height: 32px;
   font-size: 26rpx;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .input-wrap.data-v-2e66f0f2 {
   display: -webkit-box;

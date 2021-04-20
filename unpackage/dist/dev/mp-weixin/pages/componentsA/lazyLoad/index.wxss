@@ -24,8 +24,7 @@
           flex: 0 0 335rpx;
   height: 400rpx;
   margin-bottom: 20rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   overflow: hidden;
 }
 

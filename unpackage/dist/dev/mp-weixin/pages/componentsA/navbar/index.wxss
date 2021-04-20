@@ -54,8 +54,7 @@
   background-color: rgba(240, 240, 240, 0.35);
   color: #fff;
   font-size: 22rpx;
-  -webkit-border-radius: 100rpx;
-          border-radius: 100rpx;
+  border-radius: 100rpx;
   margin-left: 30rpx;
 }
 .map-wrap-text.data-v-78ed44a0 {

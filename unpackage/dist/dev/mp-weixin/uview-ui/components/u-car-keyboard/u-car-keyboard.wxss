@@ -41,10 +41,8 @@
   line-height: 80rpx;
   background-color: #fff;
   margin: 8rpx 5rpx;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
-  -webkit-box-shadow: 0 2rpx 0rpx #888992;
-          box-shadow: 0 2rpx 0rpx #888992;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 0rpx #888992;
   font-weight: 500;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -72,18 +70,15 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  -webkit-box-shadow: 0 2rpx 0rpx #888992;
-          box-shadow: 0 2rpx 0rpx #888992;
+  box-shadow: 0 2rpx 0rpx #888992;
 }
 .u-keyboard-change.data-v-be80e900 {
   font-size: 24rpx;
-  -webkit-box-shadow: 0 2rpx 0rpx #888992;
-          box-shadow: 0 2rpx 0rpx #888992;
+  box-shadow: 0 2rpx 0rpx #888992;
   position: absolute;
   width: 96rpx;
   left: 22rpx;
@@ -103,8 +98,7 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;

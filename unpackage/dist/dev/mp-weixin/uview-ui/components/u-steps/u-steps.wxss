@@ -112,8 +112,7 @@
   width: 44rpx;
   height: 44rpx;
   border: 1px solid #8799a3;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   overflow: hidden;
 }
 .u-steps .u-steps__item__dot.data-v-6d4cf9e0 {
@@ -128,8 +127,7 @@
   -webkit-flex-direction: row;
           flex-direction: row;
 
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 .u-steps .u-steps__item__text--row.data-v-6d4cf9e0 {
   margin-top: 14rpx;

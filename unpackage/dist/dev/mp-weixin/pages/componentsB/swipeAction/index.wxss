@@ -17,8 +17,7 @@ image.data-v-62ad1f07 {
           flex: 0 0 120rpx;
   height: 120rpx;
   margin-right: 20rpx;
-  -webkit-border-radius: 12rpx;
-          border-radius: 12rpx;
+  border-radius: 12rpx;
 }
 .title.data-v-62ad1f07 {
   text-align: left;

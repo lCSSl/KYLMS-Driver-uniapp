@@ -360,7 +360,7 @@
 						name: 'setting'
 					},
 					{
-						name: 'setting-fill'
+						name: 'userCenter-fill'
 					},
 					{
 						name: 'volume'
@@ -610,7 +610,7 @@
 				uni.setClipboardData({
 				    data: name,
 				    success: () => {
-				        
+
 				    }
 				});
 				uni.hideToast()
@@ -624,7 +624,7 @@
 	.wrap {
 		padding: 24rpx;
 	}
-	
+
 	.inner-wrap {
 		display: flex;
 		flex-wrap: wrap;
@@ -638,7 +638,7 @@
 		justify-content: center;
 		overflow: hidden;
 	}
-	
+
 	.u-icon-name {
 		color: $u-tips-color;
 		word-wrap: break-word;

@@ -13,8 +13,7 @@
 .comment .left image.data-v-2f13a4f4 {
   width: 64rpx;
   height: 64rpx;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #f2f2f2;
 }
 .comment .right.data-v-2f13a4f4 {
@@ -64,8 +63,7 @@
 }
 .comment .right .reply-box.data-v-2f13a4f4 {
   background-color: #f2f2f2;
-  -webkit-border-radius: 12rpx;
-          border-radius: 12rpx;
+  border-radius: 12rpx;
 }
 .comment .right .reply-box .item.data-v-2f13a4f4 {
   padding: 20rpx;

@@ -1,38 +1,26 @@
 {
   "pages": [
+    "pages/workbench/index",
+    "pages/main/userCenter",
+    "pages/auth/login",
+    "pages/auth/code",
     "pages/example/components",
     "uview-ui/components/u-avatar-cropper/u-avatar-cropper",
     "pages/example/js",
     "pages/example/template",
-    "uview-ui/components/u-full-screen/u-full-screen",
-    "pages/auth/login"
+    "uview-ui/components/u-full-screen/u-full-screen"
   ],
   "subPackages": [
     {
-      "root": "pages/componentsC",
+      "root": "pages/components",
       "pages": [
-        "test/index",
-        "gap/index",
-        "subsection/index",
-        "section/index",
-        "link/index",
-        "mask/index",
-        "countTo/index",
-        "color/index",
-        "countDown/index",
-        "progress/index",
-        "alertTips/index",
-        "badge/index",
-        "button/index",
-        "collapse/index",
-        "actionSheet/index",
-        "messageInput/index",
-        "popup/index",
-        "cell/index",
-        "numberBox/index",
-        "grid/index",
-        "layout/index",
-        "loadmore/index"
+        "checkMission/index"
+      ]
+    },
+    {
+      "root": "pages/userCenter",
+      "pages": [
+        "setting/index"
       ]
     },
     {
@@ -138,6 +126,33 @@
         "swiper/index",
         "swipeAction/index"
       ]
+    },
+    {
+      "root": "pages/componentsC",
+      "pages": [
+        "test/index",
+        "gap/index",
+        "subsection/index",
+        "section/index",
+        "link/index",
+        "mask/index",
+        "countTo/index",
+        "color/index",
+        "countDown/index",
+        "progress/index",
+        "alertTips/index",
+        "badge/index",
+        "button/index",
+        "collapse/index",
+        "actionSheet/index",
+        "messageInput/index",
+        "popup/index",
+        "cell/index",
+        "numberBox/index",
+        "grid/index",
+        "layout/index",
+        "loadmore/index"
+      ]
     }
   ],
   "window": {
@@ -152,6 +167,18 @@
     "backgroundColor": "#FFFFFF",
     "borderStyle": "black",
     "list": [
+      {
+        "pagePath": "pages/workbench/index",
+        "iconPath": "static/uview/example/component.png",
+        "selectedIconPath": "static/uview/example/component_select.png",
+        "text": "工作台"
+      },
+      {
+        "pagePath": "pages/main/userCenter",
+        "iconPath": "static/uview/example/template.png",
+        "selectedIconPath": "static/uview/example/template_select.png",
+        "text": "个人中心"
+      },
       {
         "pagePath": "pages/example/components",
         "iconPath": "static/uview/example/component.png",
@@ -173,13 +200,15 @@
     ]
   },
   "preloadRule": {
-    "pages/example/components": {
+    "pages/workbench/index": {
       "network": "all",
       "packages": [
-        "pages/componentsA",
-        "pages/componentsB",
-        "pages/componentsC"
+        "pages/components"
       ]
+    },
+    "pages/example/components": {
+      "network": "all",
+      "packages": []
     }
   },
   "usingComponents": {}

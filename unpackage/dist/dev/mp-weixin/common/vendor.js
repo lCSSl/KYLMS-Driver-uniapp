@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.createSubpackageApp = createSubpackageApp;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
 
 var _toString = Object.prototype.toString;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -241,7 +241,7 @@ var promiseInterceptor = {
 
 
 var SYNC_API_RE =
-/^\$|Window$|WindowStyle$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
+/^\$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
 
 var CONTEXT_API_RE = /^create|Manager$/;
 
@@ -363,7 +363,112 @@ var baseApi = /*#__PURE__*/Object.freeze({
   upx2px: upx2px,
   addInterceptor: addInterceptor,
   removeInterceptor: removeInterceptor,
-  interceptors: interceptors });
+  interceptors: interceptors });var
+
+
+EventChannel = /*#__PURE__*/function () {
+  function EventChannel(id, events) {var _this = this;_classCallCheck(this, EventChannel);
+    this.id = id;
+    this.listener = {};
+    this.emitCache = {};
+    if (events) {
+      Object.keys(events).forEach(function (name) {
+        _this.on(name, events[name]);
+      });
+    }
+  }_createClass(EventChannel, [{ key: "emit", value: function emit(
+
+    eventName) {for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {args[_key3 - 1] = arguments[_key3];}
+      var fns = this.listener[eventName];
+      if (!fns) {
+        return (this.emitCache[eventName] || (this.emitCache[eventName] = [])).push(args);
+      }
+      fns.forEach(function (opt) {
+        opt.fn.apply(opt.fn, args);
+      });
+      this.listener[eventName] = fns.filter(function (opt) {return opt.type !== 'once';});
+    } }, { key: "on", value: function on(
+
+    eventName, fn) {
+      this._addListener(eventName, 'on', fn);
+      this._clearCache(eventName);
+    } }, { key: "once", value: function once(
+
+    eventName, fn) {
+      this._addListener(eventName, 'once', fn);
+      this._clearCache(eventName);
+    } }, { key: "off", value: function off(
+
+    eventName, fn) {
+      var fns = this.listener[eventName];
+      if (!fns) {
+        return;
+      }
+      if (fn) {
+        for (var i = 0; i < fns.length;) {
+          if (fns[i].fn === fn) {
+            fns.splice(i, 1);
+            i--;
+          }
+          i++;
+        }
+      } else {
+        delete this.listener[eventName];
+      }
+    } }, { key: "_clearCache", value: function _clearCache(
+
+    eventName) {
+      var cacheArgs = this.emitCache[eventName];
+      if (cacheArgs) {
+        for (; cacheArgs.length > 0;) {
+          this.emit.apply(this, [eventName].concat(cacheArgs.shift()));
+        }
+      }
+    } }, { key: "_addListener", value: function _addListener(
+
+    eventName, type, fn) {
+      (this.listener[eventName] || (this.listener[eventName] = [])).push({
+        fn: fn,
+        type: type });
+
+    } }]);return EventChannel;}();
+
+
+var eventChannels = {};
+
+var eventChannelStack = [];
+
+var id = 0;
+
+function initEventChannel(events) {var cache = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+  id++;
+  var eventChannel = new EventChannel(id, events);
+  if (cache) {
+    eventChannels[id] = eventChannel;
+    eventChannelStack.push(eventChannel);
+  }
+  return eventChannel;
+}
+
+function getEventChannel(id) {
+  if (id) {
+    var eventChannel = eventChannels[id];
+    delete eventChannels[id];
+    return eventChannel;
+  }
+  return eventChannelStack.shift();
+}
+
+var navigateTo = {
+  args: function args(fromArgs, toArgs) {
+    var id = initEventChannel(fromArgs.events).id;
+    if (fromArgs.url) {
+      fromArgs.url = fromArgs.url + (fromArgs.url.indexOf('?') === -1 ? '?' : '&') + '__id__=' + id;
+    }
+  },
+  returnValue: function returnValue(fromRes, toRes) {
+    fromRes.eventChannel = getEventChannel();
+  } };
 
 
 function findExistsPageIndex(url) {
@@ -432,20 +537,6 @@ var previewImage = {
   } };
 
 
-var UUID_KEY = '__DC_STAT_UUID';
-var deviceId;
-function addUuid(result) {
-  deviceId = deviceId || wx.getStorageSync(UUID_KEY);
-  if (!deviceId) {
-    deviceId = Date.now() + '' + Math.floor(Math.random() * 1e7);
-    wx.setStorage({
-      key: UUID_KEY,
-      data: deviceId });
-
-  }
-  result.deviceId = deviceId;
-}
-
 function addSafeAreaInsets(result) {
   if (result.safeArea) {
     var safeArea = result.safeArea;
@@ -457,22 +548,16 @@ function addSafeAreaInsets(result) {
 
   }
 }
-
-var getSystemInfo = {
-  returnValue: function returnValue(result) {
-    addUuid(result);
-    addSafeAreaInsets(result);
-  } };
-
-
-// import navigateTo from 'uni-helpers/navigate-to'
-
 var protocols = {
   redirectTo: redirectTo,
-  // navigateTo,  // 由于在微信开发者工具的页面参数，会显示__id__参数，因此暂时关闭mp-weixin对于navigateTo的AOP
+  navigateTo: navigateTo,
   previewImage: previewImage,
-  getSystemInfo: getSystemInfo,
-  getSystemInfoSync: getSystemInfo };
+  getSystemInfo: {
+    returnValue: addSafeAreaInsets },
+
+  getSystemInfoSync: {
+    returnValue: addSafeAreaInsets } };
+
 
 var todos = [
 'vibrate',
@@ -503,7 +588,7 @@ function processArgs(methodName, fromArgs) {var argsOption = arguments.length > 
           keyOption = keyOption(fromArgs[key], fromArgs, toArgs);
         }
         if (!keyOption) {// 不支持的参数
-          console.warn("The '".concat(methodName, "' method of platform '\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F' does not support option '").concat(key, "'"));
+          console.warn("\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F ".concat(methodName, "\u6682\u4E0D\u652F\u6301").concat(key));
         } else if (isStr(keyOption)) {// 重写参数 key
           toArgs[keyOption] = fromArgs[key];
         } else if (isPlainObject(keyOption)) {// {name:newName,value:value}可重新指定参数 key:value
@@ -538,7 +623,7 @@ function wrapper(methodName, method) {
     var protocol = protocols[methodName];
     if (!protocol) {// 暂不支持的 api
       return function () {
-        console.error("Platform '\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F' does not support '".concat(methodName, "'."));
+        console.error("\u5FAE\u4FE1\u5C0F\u7A0B\u5E8F \u6682\u4E0D\u652F\u6301".concat(methodName));
       };
     }
     return function (arg1, arg2) {// 目前 api 最多两个参数
@@ -585,7 +670,7 @@ function createTodoApi(name) {
 
   {var fail = _ref.fail,complete = _ref.complete;
     var res = {
-      errMsg: "".concat(name, ":fail method '").concat(name, "' not supported") };
+      errMsg: "".concat(name, ":fail:\u6682\u4E0D\u652F\u6301 ").concat(name, " \u65B9\u6CD5") };
 
     isFn(fail) && fail(res);
     isFn(complete) && complete(res);
@@ -619,7 +704,7 @@ function getProvider(_ref2)
     isFn(success) && success(res);
   } else {
     res = {
-      errMsg: 'getProvider:fail service not found' };
+      errMsg: 'getProvider:fail:服务[' + service + ']不存在' };
 
     isFn(fail) && fail(res);
   }
@@ -686,7 +771,7 @@ function initTriggerEvent(mpInstance) {
     }
   }
   var oldTriggerEvent = mpInstance.triggerEvent;
-  mpInstance.triggerEvent = function (event) {for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {args[_key3 - 1] = arguments[_key3];}
+  mpInstance.triggerEvent = function (event) {for (var _len4 = arguments.length, args = new Array(_len4 > 1 ? _len4 - 1 : 0), _key4 = 1; _key4 < _len4; _key4++) {args[_key4 - 1] = arguments[_key4];}
     return oldTriggerEvent.apply(mpInstance, [customize(event)].concat(args));
   };
 }
@@ -699,24 +784,21 @@ function initHook(name, options) {
     };
   } else {
     options[name] = function () {
-      initTriggerEvent(this);for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {args[_key4] = arguments[_key4];}
+      initTriggerEvent(this);for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {args[_key5] = arguments[_key5];}
       return oldHook.apply(this, args);
     };
   }
 }
-if (!MPPage.__$wrappered) {
-  MPPage.__$wrappered = true;
-  Page = function Page() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    initHook('onLoad', options);
-    return MPPage(options);
-  };
-  Page.after = MPPage.after;
 
-  Component = function Component() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    initHook('created', options);
-    return MPComponent(options);
-  };
-}
+Page = function Page() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  initHook('onLoad', options);
+  return MPPage(options);
+};
+
+Component = function Component() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  initHook('created', options);
+  return MPComponent(options);
+};
 
 var PAGE_EVENT_HOOKS = [
 'onPullDownRefresh',
@@ -822,7 +904,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"KYLMS-Driver-uniapp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -1170,7 +1252,7 @@ function getContextVm(vm) {
   return $parent && $parent.$parent;
 }
 
-function handleEvent(event) {var _this = this;
+function handleEvent(event) {var _this2 = this;
   event = wrapper$1(event);
 
   // [['tap',[['handle',[1,2,a]],['handle1',[1,2,a]]]]]
@@ -1201,14 +1283,14 @@ function handleEvent(event) {var _this = this;
       eventsArray.forEach(function (eventArray) {
         var methodName = eventArray[0];
         if (methodName) {
-          var handlerCtx = _this.$vm;
+          var handlerCtx = _this2.$vm;
           if (handlerCtx.$options.generic) {// mp-weixin,mp-toutiao 抽象节点模拟 scoped slots
             handlerCtx = getContextVm(handlerCtx) || handlerCtx;
           }
           if (methodName === '$emit') {
             handlerCtx.$emit.apply(handlerCtx,
             processEventArgs(
-            _this.$vm,
+            _this2.$vm,
             event,
             eventArray[1],
             eventArray[2],
@@ -1228,20 +1310,16 @@ function handleEvent(event) {var _this = this;
             handler.once = true;
           }
           var params = processEventArgs(
-          _this.$vm,
+          _this2.$vm,
           event,
           eventArray[1],
           eventArray[2],
           isCustom,
           methodName);
 
-          params = Array.isArray(params) ? params : [];
           // 参数尾部增加原始事件对象用于复杂表达式内获取额外数据
-          if (/=\s*\S+\.eventParams\s*\|\|\s*\S+\[['"]event-params['"]\]/.test(handler.toString())) {
-            // eslint-disable-next-line no-sparse-arrays
-            params = params.concat([,,,,,,,,,, event]);
-          }
-          ret.push(handler.apply(handlerCtx, params));
+          // eslint-disable-next-line no-sparse-arrays
+          ret.push(handler.apply(handlerCtx, (Array.isArray(params) ? params : []).concat([,,,,,,,,,, event])));
         }
       });
     }
@@ -1256,19 +1334,6 @@ function handleEvent(event) {var _this = this;
   }
 }
 
-var eventChannels = {};
-
-var eventChannelStack = [];
-
-function getEventChannel(id) {
-  if (id) {
-    var eventChannel = eventChannels[id];
-    delete eventChannels[id];
-    return eventChannel;
-  }
-  return eventChannelStack.shift();
-}
-
 var hooks = [
 'onShow',
 'onHide',
@@ -1278,28 +1343,10 @@ var hooks = [
 'onUnhandledRejection'];
 
 
-function initEventChannel() {
-  _vue.default.prototype.getOpenerEventChannel = function () {
-    // 微信小程序使用自身getOpenerEventChannel
-    {
-      return this.$scope.getOpenerEventChannel();
-    }
-  };
-  var callHook = _vue.default.prototype.__call_hook;
-  _vue.default.prototype.__call_hook = function (hook, args) {
-    if (hook === 'onLoad' && args && args.__id__) {
-      this.__eventChannel__ = getEventChannel(args.__id__);
-      delete args.__id__;
-    }
-    return callHook.call(this, hook, args);
-  };
-}
-
 function parseBaseApp(vm, _ref3)
 
 
 {var mocks = _ref3.mocks,initRefs = _ref3.initRefs;
-  initEventChannel();
   if (vm.$options.store) {
     _vue.default.prototype.$store = vm.$options.store;
   }
@@ -1323,12 +1370,7 @@ function parseBaseApp(vm, _ref3)
 
       delete this.$options.mpType;
       delete this.$options.mpInstance;
-      if (this.mpType === 'page') {// hack vue-i18n
-        var app = getApp();
-        if (app.$vm && app.$vm.$i18n) {
-          this._i18n = app.$vm.$i18n;
-        }
-      }
+
       if (this.mpType !== 'app') {
         initRefs(this);
         initMocks(this, mocks);
@@ -1412,28 +1454,16 @@ function initRelation(detail) {
   this.triggerEvent('__l', detail);
 }
 
-function selectAllComponents(mpInstance, selector, $refs) {
-  var components = mpInstance.selectAllComponents(selector);
-  components.forEach(function (component) {
-    var ref = component.dataset.ref;
-    $refs[ref] = component.$vm || component;
-    {
-      if (component.dataset.vueGeneric === 'scoped') {
-        component.selectAllComponents('.scoped-ref').forEach(function (scopedComponent) {
-          selectAllComponents(scopedComponent, selector, $refs);
-        });
-      }
-    }
-  });
-}
-
 function initRefs(vm) {
   var mpInstance = vm.$scope;
   Object.defineProperty(vm, '$refs', {
     get: function get() {
       var $refs = {};
-      selectAllComponents(mpInstance, '.vue-ref', $refs);
-      // TODO 暂不考虑 for 中的 scoped
+      var components = mpInstance.selectAllComponents('.vue-ref');
+      components.forEach(function (component) {
+        var ref = component.dataset.ref;
+        $refs[ref] = component.$vm || component;
+      });
       var forComponents = mpInstance.selectAllComponents('.vue-ref-in-for');
       forComponents.forEach(function (component) {
         var ref = component.dataset.ref;
@@ -1474,6 +1504,20 @@ function parseApp(vm) {
 }
 
 function createApp(vm) {
+  _vue.default.prototype.getOpenerEventChannel = function () {
+    if (!this.__eventChannel__) {
+      this.__eventChannel__ = new EventChannel();
+    }
+    return this.__eventChannel__;
+  };
+  var callHook = _vue.default.prototype.__call_hook;
+  _vue.default.prototype.__call_hook = function (hook, args) {
+    if (hook === 'onLoad' && args && args.__id__) {
+      this.__eventChannel__ = getEventChannel(args.__id__);
+      delete args.__id__;
+    }
+    return callHook.call(this, hook, args);
+  };
   App(parseApp(vm));
   return vm;
 }
@@ -1676,41 +1720,6 @@ function createComponent(vueOptions) {
   }
 }
 
-function createSubpackageApp(vm) {
-  var appOptions = parseApp(vm);
-  var app = getApp({
-    allowDefault: true });
-
-  var globalData = app.globalData;
-  if (globalData) {
-    Object.keys(appOptions.globalData).forEach(function (name) {
-      if (!hasOwn(globalData, name)) {
-        globalData[name] = appOptions.globalData[name];
-      }
-    });
-  }
-  Object.keys(appOptions).forEach(function (name) {
-    if (!hasOwn(app, name)) {
-      app[name] = appOptions[name];
-    }
-  });
-  if (isFn(appOptions.onShow) && wx.onAppShow) {
-    wx.onAppShow(function () {for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {args[_key5] = arguments[_key5];}
-      appOptions.onShow.apply(app, args);
-    });
-  }
-  if (isFn(appOptions.onHide) && wx.onAppHide) {
-    wx.onAppHide(function () {for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {args[_key6] = arguments[_key6];}
-      appOptions.onHide.apply(app, args);
-    });
-  }
-  if (isFn(appOptions.onLaunch)) {
-    var args = wx.getLaunchOptionsSync && wx.getLaunchOptionsSync();
-    appOptions.onLaunch.call(app, args);
-  }
-  return vm;
-}
-
 todos.forEach(function (todoApi) {
   protocols[todoApi] = false;
 });
@@ -1790,7 +1799,6 @@ if (typeof Proxy !== 'undefined' && "mp-weixin" !== 'app-plus') {
 wx.createApp = createApp;
 wx.createPage = createPage;
 wx.createComponent = createComponent;
-wx.createSubpackageApp = createSubpackageApp;
 
 var uni$1 = uni;var _default =
 
@@ -1927,10 +1935,1339 @@ function normalizeComponent (
 
 /***/ }),
 
+/***/ 102:
+/*!************************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/components/u-avatar-cropper/weCropper.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(uni, global) {/**
+ * we-cropper v1.3.9
+ * (c) 2020 dlhandsome
+ * @license MIT
+ */
+(function (global, factory) {
+   true ? module.exports = factory() :
+  undefined;
+})(this, function () {
+  'use strict';
+
+  var device = void 0;
+  var TOUCH_STATE = ['touchstarted', 'touchmoved', 'touchended'];
+
+  function firstLetterUpper(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function setTouchState(instance) {
+    var arg = [],
+    len = arguments.length - 1;
+    while (len-- > 0) {arg[len] = arguments[len + 1];}
+
+    TOUCH_STATE.forEach(function (key, i) {
+      if (arg[i] !== undefined) {
+        instance[key] = arg[i];
+      }
+    });
+  }
+
+  function validator(instance, o) {
+    Object.defineProperties(instance, o);
+  }
+
+  function getDevice() {
+    if (!device) {
+      device = uni.getSystemInfoSync();
+    }
+    return device;
+  }
+
+  var tmp = {};
+
+  var ref = getDevice();
+  var pixelRatio = ref.pixelRatio;
+
+  var DEFAULT = {
+    id: {
+      default: 'cropper',
+      get: function get() {
+        return tmp.id;
+      },
+      set: function set(value) {
+        if (typeof value !== 'string') {
+          console.error("id：" + value + " is invalid");
+        }
+        tmp.id = value;
+      } },
+
+    width: {
+      default: 750,
+      get: function get() {
+        return tmp.width;
+      },
+      set: function set(value) {
+        if (typeof value !== 'number') {
+          console.error("width：" + value + " is invalid");
+        }
+        tmp.width = value;
+      } },
+
+    height: {
+      default: 750,
+      get: function get() {
+        return tmp.height;
+      },
+      set: function set(value) {
+        if (typeof value !== 'number') {
+          console.error("height：" + value + " is invalid");
+        }
+        tmp.height = value;
+      } },
+
+    pixelRatio: {
+      default: pixelRatio,
+      get: function get() {
+        return tmp.pixelRatio;
+      },
+      set: function set(value) {
+        if (typeof value !== 'number') {
+          console.error("pixelRatio：" + value + " is invalid");
+        }
+        tmp.pixelRatio = value;
+      } },
+
+    scale: {
+      default: 2.5,
+      get: function get() {
+        return tmp.scale;
+      },
+      set: function set(value) {
+        if (typeof value !== 'number') {
+          console.error("scale：" + value + " is invalid");
+        }
+        tmp.scale = value;
+      } },
+
+    zoom: {
+      default: 5,
+      get: function get() {
+        return tmp.zoom;
+      },
+      set: function set(value) {
+        if (typeof value !== 'number') {
+          console.error("zoom：" + value + " is invalid");
+        } else if (value < 0 || value > 10) {
+          console.error("zoom should be ranged in 0 ~ 10");
+        }
+        tmp.zoom = value;
+      } },
+
+    src: {
+      default: '',
+      get: function get() {
+        return tmp.src;
+      },
+      set: function set(value) {
+        if (typeof value !== 'string') {
+          console.error("src：" + value + " is invalid");
+        }
+        tmp.src = value;
+      } },
+
+    cut: {
+      default: {},
+      get: function get() {
+        return tmp.cut;
+      },
+      set: function set(value) {
+        if (typeof value !== 'object') {
+          console.error("cut：" + value + " is invalid");
+        }
+        tmp.cut = value;
+      } },
+
+    boundStyle: {
+      default: {},
+      get: function get() {
+        return tmp.boundStyle;
+      },
+      set: function set(value) {
+        if (typeof value !== 'object') {
+          console.error("boundStyle：" + value + " is invalid");
+        }
+        tmp.boundStyle = value;
+      } },
+
+    onReady: {
+      default: null,
+      get: function get() {
+        return tmp.ready;
+      },
+      set: function set(value) {
+        tmp.ready = value;
+      } },
+
+    onBeforeImageLoad: {
+      default: null,
+      get: function get() {
+        return tmp.beforeImageLoad;
+      },
+      set: function set(value) {
+        tmp.beforeImageLoad = value;
+      } },
+
+    onImageLoad: {
+      default: null,
+      get: function get() {
+        return tmp.imageLoad;
+      },
+      set: function set(value) {
+        tmp.imageLoad = value;
+      } },
+
+    onBeforeDraw: {
+      default: null,
+      get: function get() {
+        return tmp.beforeDraw;
+      },
+      set: function set(value) {
+        tmp.beforeDraw = value;
+      } } };
+
+
+
+  var ref$1 = getDevice();
+  var windowWidth = ref$1.windowWidth;
+
+  function prepare() {
+    var self = this;
+
+    // v1.4.0 版本中将不再自动绑定we-cropper实例
+    self.attachPage = function () {
+      var pages = getCurrentPages();
+      // 获取到当前page上下文
+      var pageContext = pages[pages.length - 1];
+      // 把this依附在Page上下文的wecropper属性上，便于在page钩子函数中访问
+      Object.defineProperty(pageContext, 'wecropper', {
+        get: function get() {
+          console.warn(
+          'Instance will not be automatically bound to the page after v1.4.0\n\n' +
+          'Please use a custom instance name instead\n\n' +
+          'Example: \n' +
+          'this.mycropper = new WeCropper(options)\n\n' +
+          '// ...\n' +
+          'this.mycropper.getCropperImage()');
+
+          return self;
+        },
+        configurable: true });
+
+    };
+
+    self.createCtx = function () {
+      var id = self.id;
+      var targetId = self.targetId;
+
+      if (id) {
+        self.ctx = self.ctx || uni.createCanvasContext(id);
+        self.targetCtx = self.targetCtx || uni.createCanvasContext(targetId);
+      } else {
+        console.error("constructor: create canvas context failed, 'id' must be valuable");
+      }
+    };
+
+    self.deviceRadio = windowWidth / 750;
+  }
+
+  var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !==
+  'undefined' ? self : {};
+
+
+
+
+
+  function createCommonjsModule(fn, module) {
+    return module = {
+      exports: {} },
+    fn(module, module.exports), module.exports;
+  }
+
+  var tools = createCommonjsModule(function (module, exports) {
+    /**
+                                                                * String type check
+                                                                */
+    exports.isStr = function (v) {
+      return typeof v === 'string';
+    };
+    /**
+        * Number type check
+        */
+    exports.isNum = function (v) {
+      return typeof v === 'number';
+    };
+    /**
+        * Array type check
+        */
+    exports.isArr = Array.isArray;
+    /**
+                                    * undefined type check
+                                    */
+    exports.isUndef = function (v) {
+      return v === undefined;
+    };
+
+    exports.isTrue = function (v) {
+      return v === true;
+    };
+
+    exports.isFalse = function (v) {
+      return v === false;
+    };
+    /**
+        * Function type check
+        */
+    exports.isFunc = function (v) {
+      return typeof v === 'function';
+    };
+    /**
+        * Quick object check - this is primarily used to tell
+        * Objects from primitive values when we know the value
+        * is a JSON-compliant type.
+        */
+    exports.isObj = exports.isObject = function (obj) {
+      return obj !== null && typeof obj === 'object';
+    };
+
+    /**
+        * Strict object type check. Only returns true
+        * for plain JavaScript objects.
+        */
+    var _toString = Object.prototype.toString;
+    exports.isPlainObject = function (obj) {
+      return _toString.call(obj) === '[object Object]';
+    };
+
+    /**
+        * Check whether the object has the property.
+        */
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+    exports.hasOwn = function (obj, key) {
+      return hasOwnProperty.call(obj, key);
+    };
+
+    /**
+        * Perform no operation.
+        * Stubbing args to make Flow happy without leaving useless transpiled code
+        * with ...rest (https://flow.org/blog/2017/05/07/Strict-Function-Call-Arity/)
+        */
+    exports.noop = function (a, b, c) {};
+
+    /**
+                                           * Check if val is a valid array index.
+                                           */
+    exports.isValidArrayIndex = function (val) {
+      var n = parseFloat(String(val));
+      return n >= 0 && Math.floor(n) === n && isFinite(val);
+    };
+  });
+
+  var tools_7 = tools.isFunc;
+  var tools_10 = tools.isPlainObject;
+
+  var EVENT_TYPE = ['ready', 'beforeImageLoad', 'beforeDraw', 'imageLoad'];
+
+  function observer() {
+    var self = this;
+
+    self.on = function (event, fn) {
+      if (EVENT_TYPE.indexOf(event) > -1) {
+        if (tools_7(fn)) {
+          event === 'ready' ?
+          fn(self) :
+          self["on" + firstLetterUpper(event)] = fn;
+        }
+      } else {
+        console.error("event: " + event + " is invalid");
+      }
+      return self;
+    };
+  }
+
+  function wxPromise(fn) {
+    return function (obj) {
+      var args = [],
+      len = arguments.length - 1;
+      while (len-- > 0) {args[len] = arguments[len + 1];}
+
+      if (obj === void 0) obj = {};
+      return new Promise(function (resolve, reject) {
+        obj.success = function (res) {
+          resolve(res);
+        };
+        obj.fail = function (err) {
+          reject(err);
+        };
+        fn.apply(void 0, [obj].concat(args));
+      });
+    };
+  }
+
+  function draw(ctx, reserve) {
+    if (reserve === void 0) reserve = false;
+
+    return new Promise(function (resolve) {
+      ctx.draw(reserve, resolve);
+    });
+  }
+
+  var getImageInfo = wxPromise(uni.getImageInfo);
+
+  var canvasToTempFilePath = wxPromise(uni.canvasToTempFilePath);
+
+  var base64 = createCommonjsModule(function (module, exports) {
+    /*! http://mths.be/base64 v0.1.0 by @mathias | MIT license */
+    (function (root) {
+
+      // Detect free variables `exports`.
+      var freeExports =  true && exports;
+
+      // Detect free variable `module`.
+      var freeModule =  true && module &&
+      module.exports == freeExports && module;
+
+      // Detect free variable `global`, from Node.js or Browserified code, and use
+      // it as `root`.
+      var freeGlobal = typeof commonjsGlobal == 'object' && commonjsGlobal;
+      if (freeGlobal.global === freeGlobal || freeGlobal.window === freeGlobal) {
+        root = freeGlobal;
+      }
+
+      /*--------------------------------------------------------------------------*/
+
+      var InvalidCharacterError = function InvalidCharacterError(message) {
+        this.message = message;
+      };
+      InvalidCharacterError.prototype = new Error();
+      InvalidCharacterError.prototype.name = 'InvalidCharacterError';
+
+      var error = function error(message) {
+        // Note: the error messages used throughout this file match those used by
+        // the native `atob`/`btoa` implementation in Chromium.
+        throw new InvalidCharacterError(message);
+      };
+
+      var TABLE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+      // http://whatwg.org/html/common-microsyntaxes.html#space-character
+      var REGEX_SPACE_CHARACTERS = /[\t\n\f\r ]/g;
+
+      // `decode` is designed to be fully compatible with `atob` as described in the
+      // HTML Standard. http://whatwg.org/html/webappapis.html#dom-windowbase64-atob
+      // The optimized base64-decoding algorithm used is based on @atk’s excellent
+      // implementation. https://gist.github.com/atk/1020396
+      var decode = function decode(input) {
+        input = String(input).
+        replace(REGEX_SPACE_CHARACTERS, '');
+        var length = input.length;
+        if (length % 4 == 0) {
+          input = input.replace(/==?$/, '');
+          length = input.length;
+        }
+        if (
+        length % 4 == 1 ||
+        // http://whatwg.org/C#alphanumeric-ascii-characters
+        /[^+a-zA-Z0-9/]/.test(input))
+        {
+          error(
+          'Invalid character: the string to be decoded is not correctly encoded.');
+
+        }
+        var bitCounter = 0;
+        var bitStorage;
+        var buffer;
+        var output = '';
+        var position = -1;
+        while (++position < length) {
+          buffer = TABLE.indexOf(input.charAt(position));
+          bitStorage = bitCounter % 4 ? bitStorage * 64 + buffer : buffer;
+          // Unless this is the first of a group of 4 characters…
+          if (bitCounter++ % 4) {
+            // …convert the first 8 bits to a single ASCII character.
+            output += String.fromCharCode(
+            0xFF & bitStorage >> (-2 * bitCounter & 6));
+
+          }
+        }
+        return output;
+      };
+
+      // `encode` is designed to be fully compatible with `btoa` as described in the
+      // HTML Standard: http://whatwg.org/html/webappapis.html#dom-windowbase64-btoa
+      var encode = function encode(input) {
+        input = String(input);
+        if (/[^\0-\xFF]/.test(input)) {
+          // Note: no need to special-case astral symbols here, as surrogates are
+          // matched, and the input is supposed to only contain ASCII anyway.
+          error(
+          'The string to be encoded contains characters outside of the ' +
+          'Latin1 range.');
+
+        }
+        var padding = input.length % 3;
+        var output = '';
+        var position = -1;
+        var a;
+        var b;
+        var c;
+        var buffer;
+        // Make sure any padding is handled outside of the loop.
+        var length = input.length - padding;
+
+        while (++position < length) {
+          // Read three bytes, i.e. 24 bits.
+          a = input.charCodeAt(position) << 16;
+          b = input.charCodeAt(++position) << 8;
+          c = input.charCodeAt(++position);
+          buffer = a + b + c;
+          // Turn the 24 bits into four chunks of 6 bits each, and append the
+          // matching character for each of them to the output.
+          output +=
+          TABLE.charAt(buffer >> 18 & 0x3F) +
+          TABLE.charAt(buffer >> 12 & 0x3F) +
+          TABLE.charAt(buffer >> 6 & 0x3F) +
+          TABLE.charAt(buffer & 0x3F);
+
+        }
+
+        if (padding == 2) {
+          a = input.charCodeAt(position) << 8;
+          b = input.charCodeAt(++position);
+          buffer = a + b;
+          output +=
+          TABLE.charAt(buffer >> 10) +
+          TABLE.charAt(buffer >> 4 & 0x3F) +
+          TABLE.charAt(buffer << 2 & 0x3F) +
+          '=';
+
+        } else if (padding == 1) {
+          buffer = input.charCodeAt(position);
+          output +=
+          TABLE.charAt(buffer >> 2) +
+          TABLE.charAt(buffer << 4 & 0x3F) +
+          '==';
+
+        }
+
+        return output;
+      };
+
+      var base64 = {
+        'encode': encode,
+        'decode': decode,
+        'version': '0.1.0' };
+
+
+      // Some AMD build optimizers, like r.js, check for specific condition patterns
+      // like the following:
+      if (
+      false)
+      {} else if (freeExports && !freeExports.nodeType) {
+        if (freeModule) {// in Node.js or RingoJS v0.8.0+
+          freeModule.exports = base64;
+        } else {// in Narwhal or RingoJS v0.7.0-
+          for (var key in base64) {
+            base64.hasOwnProperty(key) && (freeExports[key] = base64[key]);
+          }
+        }
+      } else {// in Rhino or a web browser
+        root.base64 = base64;
+      }
+
+    })(commonjsGlobal);
+  });
+
+  function makeURI(strData, type) {
+    return 'data:' + type + ';base64,' + strData;
+  }
+
+  function fixType(type) {
+    type = type.toLowerCase().replace(/jpg/i, 'jpeg');
+    var r = type.match(/png|jpeg|bmp|gif/)[0];
+    return 'image/' + r;
+  }
+
+  function encodeData(data) {
+    var str = '';
+    if (typeof data === 'string') {
+      str = data;
+    } else {
+      for (var i = 0; i < data.length; i++) {
+        str += String.fromCharCode(data[i]);
+      }
+    }
+    return base64.encode(str);
+  }
+
+  /**
+     * 获取图像区域隐含的像素数据
+     * @param canvasId canvas标识
+     * @param x 将要被提取的图像数据矩形区域的左上角 x 坐标
+     * @param y 将要被提取的图像数据矩形区域的左上角 y 坐标
+     * @param width 将要被提取的图像数据矩形区域的宽度
+     * @param height 将要被提取的图像数据矩形区域的高度
+     * @param done 完成回调
+     */
+  function getImageData(canvasId, x, y, width, height, done) {
+    uni.canvasGetImageData({
+      canvasId: canvasId,
+      x: x,
+      y: y,
+      width: width,
+      height: height,
+      success: function success(res) {
+        done(res, null);
+      },
+      fail: function fail(res) {
+        done(null, res);
+      } });
+
+  }
+
+  /**
+     * 生成bmp格式图片
+     * 按照规则生成图片响应头和响应体
+     * @param oData 用来描述 canvas 区域隐含的像素数据 { data, width, height } = oData
+     * @returns {*} base64字符串
+     */
+  function genBitmapImage(oData) {
+    //
+    // BITMAPFILEHEADER: http://msdn.microsoft.com/en-us/library/windows/desktop/dd183374(v=vs.85).aspx
+    // BITMAPINFOHEADER: http://msdn.microsoft.com/en-us/library/dd183376.aspx
+    //
+    var biWidth = oData.width;
+    var biHeight = oData.height;
+    var biSizeImage = biWidth * biHeight * 3;
+    var bfSize = biSizeImage + 54; // total header size = 54 bytes
+
+    //
+    //  typedef struct tagBITMAPFILEHEADER {
+    //  	WORD bfType;
+    //  	DWORD bfSize;
+    //  	WORD bfReserved1;
+    //  	WORD bfReserved2;
+    //  	DWORD bfOffBits;
+    //  } BITMAPFILEHEADER;
+    //
+    var BITMAPFILEHEADER = [
+    // WORD bfType -- The file type signature; must be "BM"
+    0x42, 0x4D,
+    // DWORD bfSize -- The size, in bytes, of the bitmap file
+    bfSize & 0xff, bfSize >> 8 & 0xff, bfSize >> 16 & 0xff, bfSize >> 24 & 0xff,
+    // WORD bfReserved1 -- Reserved; must be zero
+    0, 0,
+    // WORD bfReserved2 -- Reserved; must be zero
+    0, 0,
+    // DWORD bfOffBits -- The offset, in bytes, from the beginning of the BITMAPFILEHEADER structure to the bitmap bits.
+    54, 0, 0, 0];
+
+
+    //
+    //  typedef struct tagBITMAPINFOHEADER {
+    //  	DWORD biSize;
+    //  	LONG  biWidth;
+    //  	LONG  biHeight;
+    //  	WORD  biPlanes;
+    //  	WORD  biBitCount;
+    //  	DWORD biCompression;
+    //  	DWORD biSizeImage;
+    //  	LONG  biXPelsPerMeter;
+    //  	LONG  biYPelsPerMeter;
+    //  	DWORD biClrUsed;
+    //  	DWORD biClrImportant;
+    //  } BITMAPINFOHEADER, *PBITMAPINFOHEADER;
+    //
+    var BITMAPINFOHEADER = [
+    // DWORD biSize -- The number of bytes required by the structure
+    40, 0, 0, 0,
+    // LONG biWidth -- The width of the bitmap, in pixels
+    biWidth & 0xff, biWidth >> 8 & 0xff, biWidth >> 16 & 0xff, biWidth >> 24 & 0xff,
+    // LONG biHeight -- The height of the bitmap, in pixels
+    biHeight & 0xff, biHeight >> 8 & 0xff, biHeight >> 16 & 0xff, biHeight >> 24 & 0xff,
+    // WORD biPlanes -- The number of planes for the target device. This value must be set to 1
+    1, 0,
+    // WORD biBitCount -- The number of bits-per-pixel, 24 bits-per-pixel -- the bitmap
+    // has a maximum of 2^24 colors (16777216, Truecolor)
+    24, 0,
+    // DWORD biCompression -- The type of compression, BI_RGB (code 0) -- uncompressed
+    0, 0, 0, 0,
+    // DWORD biSizeImage -- The size, in bytes, of the image. This may be set to zero for BI_RGB bitmaps
+    biSizeImage & 0xff, biSizeImage >> 8 & 0xff, biSizeImage >> 16 & 0xff, biSizeImage >> 24 & 0xff,
+    // LONG biXPelsPerMeter, unused
+    0, 0, 0, 0,
+    // LONG biYPelsPerMeter, unused
+    0, 0, 0, 0,
+    // DWORD biClrUsed, the number of color indexes of palette, unused
+    0, 0, 0, 0,
+    // DWORD biClrImportant, unused
+    0, 0, 0, 0];
+
+
+    var iPadding = (4 - biWidth * 3 % 4) % 4;
+
+    var aImgData = oData.data;
+
+    var strPixelData = '';
+    var biWidth4 = biWidth << 2;
+    var y = biHeight;
+    var fromCharCode = String.fromCharCode;
+
+    do {
+      var iOffsetY = biWidth4 * (y - 1);
+      var strPixelRow = '';
+      for (var x = 0; x < biWidth; x++) {
+        var iOffsetX = x << 2;
+        strPixelRow += fromCharCode(aImgData[iOffsetY + iOffsetX + 2]) +
+        fromCharCode(aImgData[iOffsetY + iOffsetX + 1]) +
+        fromCharCode(aImgData[iOffsetY + iOffsetX]);
+      }
+
+      for (var c = 0; c < iPadding; c++) {
+        strPixelRow += String.fromCharCode(0);
+      }
+
+      strPixelData += strPixelRow;
+    } while (--y);
+
+    var strEncoded = encodeData(BITMAPFILEHEADER.concat(BITMAPINFOHEADER)) + encodeData(strPixelData);
+
+    return strEncoded;
+  }
+
+  /**
+     * 转换为图片base64
+     * @param canvasId canvas标识
+     * @param x 将要被提取的图像数据矩形区域的左上角 x 坐标
+     * @param y 将要被提取的图像数据矩形区域的左上角 y 坐标
+     * @param width 将要被提取的图像数据矩形区域的宽度
+     * @param height 将要被提取的图像数据矩形区域的高度
+     * @param type 转换图片类型
+     * @param done 完成回调
+     */
+  function convertToImage(canvasId, x, y, width, height, type, done) {
+    if (done === void 0) done = function done() {};
+
+    if (type === undefined) {
+      type = 'png';
+    }
+    type = fixType(type);
+    if (/bmp/.test(type)) {
+      getImageData(canvasId, x, y, width, height, function (data, err) {
+        var strData = genBitmapImage(data);
+        tools_7(done) && done(makeURI(strData, 'image/' + type), err);
+      });
+    } else {
+      console.error('暂不支持生成\'' + type + '\'类型的base64图片');
+    }
+  }
+
+  var CanvasToBase64 = {
+    convertToImage: convertToImage,
+    // convertToPNG: function (width, height, done) {
+    //   return convertToImage(width, height, 'png', done)
+    // },
+    // convertToJPEG: function (width, height, done) {
+    //   return convertToImage(width, height, 'jpeg', done)
+    // },
+    // convertToGIF: function (width, height, done) {
+    //   return convertToImage(width, height, 'gif', done)
+    // },
+    convertToBMP: function convertToBMP(ref, done) {
+      if (ref === void 0) ref = {};
+      var canvasId = ref.canvasId;
+      var x = ref.x;
+      var y = ref.y;
+      var width = ref.width;
+      var height = ref.height;
+      if (done === void 0) done = function done() {};
+
+      return convertToImage(canvasId, x, y, width, height, 'bmp', done);
+    } };
+
+
+  function methods() {
+    var self = this;
+
+    var boundWidth = self.width; // 裁剪框默认宽度，即整个画布宽度
+    var boundHeight = self.height; // 裁剪框默认高度，即整个画布高度
+
+    var id = self.id;
+    var targetId = self.targetId;
+    var pixelRatio = self.pixelRatio;
+
+    var ref = self.cut;
+    var x = ref.x;
+    if (x === void 0) x = 0;
+    var y = ref.y;
+    if (y === void 0) y = 0;
+    var width = ref.width;
+    if (width === void 0) width = boundWidth;
+    var height = ref.height;
+    if (height === void 0) height = boundHeight;
+
+    self.updateCanvas = function (done) {
+      if (self.croperTarget) {
+        //  画布绘制图片
+        self.ctx.drawImage(
+        self.croperTarget,
+        self.imgLeft,
+        self.imgTop,
+        self.scaleWidth,
+        self.scaleHeight);
+
+      }
+      tools_7(self.onBeforeDraw) && self.onBeforeDraw(self.ctx, self);
+
+      self.setBoundStyle(self.boundStyle); //	设置边界样式
+
+      self.ctx.draw(false, done);
+      return self;
+    };
+
+    self.pushOrigin = self.pushOrign = function (src) {
+      self.src = src;
+
+      tools_7(self.onBeforeImageLoad) && self.onBeforeImageLoad(self.ctx, self);
+
+      return getImageInfo({
+        src: src }).
+
+      then(function (res) {
+        var innerAspectRadio = res.width / res.height;
+        var customAspectRadio = width / height;
+
+        self.croperTarget = res.path;
+
+        if (innerAspectRadio < customAspectRadio) {
+          self.rectX = x;
+          self.baseWidth = width;
+          self.baseHeight = width / innerAspectRadio;
+          self.rectY = y - Math.abs((height - self.baseHeight) / 2);
+        } else {
+          self.rectY = y;
+          self.baseWidth = height * innerAspectRadio;
+          self.baseHeight = height;
+          self.rectX = x - Math.abs((width - self.baseWidth) / 2);
+        }
+
+        self.imgLeft = self.rectX;
+        self.imgTop = self.rectY;
+        self.scaleWidth = self.baseWidth;
+        self.scaleHeight = self.baseHeight;
+
+        self.update();
+
+        return new Promise(function (resolve) {
+          self.updateCanvas(resolve);
+        });
+      }).
+      then(function () {
+        tools_7(self.onImageLoad) && self.onImageLoad(self.ctx, self);
+      });
+    };
+
+    self.removeImage = function () {
+      self.src = '';
+      self.croperTarget = '';
+      return draw(self.ctx);
+    };
+
+    self.getCropperBase64 = function (done) {
+      if (done === void 0) done = function done() {};
+
+      CanvasToBase64.convertToBMP({
+        canvasId: id,
+        x: x,
+        y: y,
+        width: width,
+        height: height },
+      done);
+    };
+
+    self.getCropperImage = function (opt, fn) {
+      var customOptions = opt;
+
+      var canvasOptions = {
+        canvasId: id,
+        x: x,
+        y: y,
+        width: width,
+        height: height };
+
+
+      var task = function task() {
+        return Promise.resolve();
+      };
+
+      if (
+      tools_10(customOptions) &&
+      customOptions.original)
+      {
+        // original mode
+        task = function task() {
+          self.targetCtx.drawImage(
+          self.croperTarget,
+          self.imgLeft * pixelRatio,
+          self.imgTop * pixelRatio,
+          self.scaleWidth * pixelRatio,
+          self.scaleHeight * pixelRatio);
+
+
+          canvasOptions = {
+            canvasId: targetId,
+            x: x * pixelRatio,
+            y: y * pixelRatio,
+            width: width * pixelRatio,
+            height: height * pixelRatio };
+
+
+          return draw(self.targetCtx);
+        };
+      }
+
+      return task().
+      then(function () {
+        if (tools_10(customOptions)) {
+          canvasOptions = Object.assign({}, canvasOptions, customOptions);
+        }
+
+        if (tools_7(customOptions)) {
+          fn = customOptions;
+        }
+
+        var arg = canvasOptions.componentContext ?
+        [canvasOptions, canvasOptions.componentContext] :
+        [canvasOptions];
+
+        return canvasToTempFilePath.apply(null, arg);
+      }).
+      then(function (res) {
+        var tempFilePath = res.tempFilePath;
+
+        return tools_7(fn) ?
+        fn.call(self, tempFilePath, null) :
+        tempFilePath;
+      }).
+      catch(function (err) {
+        if (tools_7(fn)) {
+          fn.call(self, null, err);
+        } else {
+          throw err;
+        }
+      });
+    };
+  }
+
+  /**
+     * 获取最新缩放值
+     * @param oldScale 上一次触摸结束后的缩放值
+     * @param oldDistance 上一次触摸结束后的双指距离
+     * @param zoom 缩放系数
+     * @param touch0 第一指touch对象
+     * @param touch1 第二指touch对象
+     * @returns {*}
+     */
+  var getNewScale = function getNewScale(oldScale, oldDistance, zoom, touch0, touch1) {
+    var xMove, yMove, newDistance;
+    // 计算二指最新距离
+    xMove = Math.round(touch1.x - touch0.x);
+    yMove = Math.round(touch1.y - touch0.y);
+    newDistance = Math.round(Math.sqrt(xMove * xMove + yMove * yMove));
+
+    return oldScale + 0.001 * zoom * (newDistance - oldDistance);
+  };
+
+  function update() {
+    var self = this;
+
+    if (!self.src) {
+      return;
+    }
+
+    self.__oneTouchStart = function (touch) {
+      self.touchX0 = Math.round(touch.x);
+      self.touchY0 = Math.round(touch.y);
+    };
+
+    self.__oneTouchMove = function (touch) {
+      var xMove, yMove;
+      // 计算单指移动的距离
+      if (self.touchended) {
+        return self.updateCanvas();
+      }
+      xMove = Math.round(touch.x - self.touchX0);
+      yMove = Math.round(touch.y - self.touchY0);
+
+      var imgLeft = Math.round(self.rectX + xMove);
+      var imgTop = Math.round(self.rectY + yMove);
+
+      self.outsideBound(imgLeft, imgTop);
+
+      self.updateCanvas();
+    };
+
+    self.__twoTouchStart = function (touch0, touch1) {
+      var xMove, yMove, oldDistance;
+
+      self.touchX1 = Math.round(self.rectX + self.scaleWidth / 2);
+      self.touchY1 = Math.round(self.rectY + self.scaleHeight / 2);
+
+      // 计算两指距离
+      xMove = Math.round(touch1.x - touch0.x);
+      yMove = Math.round(touch1.y - touch0.y);
+      oldDistance = Math.round(Math.sqrt(xMove * xMove + yMove * yMove));
+
+      self.oldDistance = oldDistance;
+    };
+
+    self.__twoTouchMove = function (touch0, touch1) {
+      var oldScale = self.oldScale;
+      var oldDistance = self.oldDistance;
+      var scale = self.scale;
+      var zoom = self.zoom;
+
+      self.newScale = getNewScale(oldScale, oldDistance, zoom, touch0, touch1);
+
+      //  设定缩放范围
+      self.newScale <= 1 && (self.newScale = 1);
+      self.newScale >= scale && (self.newScale = scale);
+
+      self.scaleWidth = Math.round(self.newScale * self.baseWidth);
+      self.scaleHeight = Math.round(self.newScale * self.baseHeight);
+      var imgLeft = Math.round(self.touchX1 - self.scaleWidth / 2);
+      var imgTop = Math.round(self.touchY1 - self.scaleHeight / 2);
+
+      self.outsideBound(imgLeft, imgTop);
+
+      self.updateCanvas();
+    };
+
+    self.__xtouchEnd = function () {
+      self.oldScale = self.newScale;
+      self.rectX = self.imgLeft;
+      self.rectY = self.imgTop;
+    };
+  }
+
+  var handle = {
+    //  图片手势初始监测
+    touchStart: function touchStart(e) {
+      var self = this;
+      var ref = e.touches;
+      var touch0 = ref[0];
+      var touch1 = ref[1];
+
+      if (!self.src) {
+        return;
+      }
+
+      setTouchState(self, true, null, null);
+
+      // 计算第一个触摸点的位置，并参照改点进行缩放
+      self.__oneTouchStart(touch0);
+
+      // 两指手势触发
+      if (e.touches.length >= 2) {
+        self.__twoTouchStart(touch0, touch1);
+      }
+    },
+
+    //  图片手势动态缩放
+    touchMove: function touchMove(e) {
+      var self = this;
+      var ref = e.touches;
+      var touch0 = ref[0];
+      var touch1 = ref[1];
+
+      if (!self.src) {
+        return;
+      }
+
+      setTouchState(self, null, true);
+
+      // 单指手势时触发
+      if (e.touches.length === 1) {
+        self.__oneTouchMove(touch0);
+      }
+      // 两指手势触发
+      if (e.touches.length >= 2) {
+        self.__twoTouchMove(touch0, touch1);
+      }
+    },
+
+    touchEnd: function touchEnd(e) {
+      var self = this;
+
+      if (!self.src) {
+        return;
+      }
+
+      setTouchState(self, false, false, true);
+      self.__xtouchEnd();
+    } };
+
+
+  function cut() {
+    var self = this;
+    var boundWidth = self.width; // 裁剪框默认宽度，即整个画布宽度
+    var boundHeight = self.height;
+    // 裁剪框默认高度，即整个画布高度
+    var ref = self.cut;
+    var x = ref.x;
+    if (x === void 0) x = 0;
+    var y = ref.y;
+    if (y === void 0) y = 0;
+    var width = ref.width;
+    if (width === void 0) width = boundWidth;
+    var height = ref.height;
+    if (height === void 0) height = boundHeight;
+
+    /**
+                                                  * 设置边界
+                                                  * @param imgLeft 图片左上角横坐标值
+                                                  * @param imgTop 图片左上角纵坐标值
+                                                  */
+    self.outsideBound = function (imgLeft, imgTop) {
+      self.imgLeft = imgLeft >= x ?
+      x :
+      self.scaleWidth + imgLeft - x <= width ?
+      x + width - self.scaleWidth :
+      imgLeft;
+
+      self.imgTop = imgTop >= y ?
+      y :
+      self.scaleHeight + imgTop - y <= height ?
+      y + height - self.scaleHeight :
+      imgTop;
+    };
+
+    /**
+        * 设置边界样式
+        * @param color	边界颜色
+        */
+    self.setBoundStyle = function (ref) {
+      if (ref === void 0) ref = {};
+      var color = ref.color;
+      if (color === void 0) color = '#04b00f';
+      var mask = ref.mask;
+      if (mask === void 0) mask = 'rgba(0, 0, 0, 0.3)';
+      var lineWidth = ref.lineWidth;
+      if (lineWidth === void 0) lineWidth = 1;
+
+      var half = lineWidth / 2;
+      var boundOption = [{
+        start: {
+          x: x - half,
+          y: y + 10 - half },
+
+        step1: {
+          x: x - half,
+          y: y - half },
+
+        step2: {
+          x: x + 10 - half,
+          y: y - half } },
+
+
+      {
+        start: {
+          x: x - half,
+          y: y + height - 10 + half },
+
+        step1: {
+          x: x - half,
+          y: y + height + half },
+
+        step2: {
+          x: x + 10 - half,
+          y: y + height + half } },
+
+
+      {
+        start: {
+          x: x + width - 10 + half,
+          y: y - half },
+
+        step1: {
+          x: x + width + half,
+          y: y - half },
+
+        step2: {
+          x: x + width + half,
+          y: y + 10 - half } },
+
+
+      {
+        start: {
+          x: x + width + half,
+          y: y + height - 10 + half },
+
+        step1: {
+          x: x + width + half,
+          y: y + height + half },
+
+        step2: {
+          x: x + width - 10 + half,
+          y: y + height + half } }];
+
+
+
+
+      // 绘制半透明层
+      self.ctx.beginPath();
+      self.ctx.setFillStyle(mask);
+      self.ctx.fillRect(0, 0, x, boundHeight);
+      self.ctx.fillRect(x, 0, width, y);
+      self.ctx.fillRect(x, y + height, width, boundHeight - y - height);
+      self.ctx.fillRect(x + width, 0, boundWidth - x - width, boundHeight);
+      self.ctx.fill();
+
+      boundOption.forEach(function (op) {
+        self.ctx.beginPath();
+        self.ctx.setStrokeStyle(color);
+        self.ctx.setLineWidth(lineWidth);
+        self.ctx.moveTo(op.start.x, op.start.y);
+        self.ctx.lineTo(op.step1.x, op.step1.y);
+        self.ctx.lineTo(op.step2.x, op.step2.y);
+        self.ctx.stroke();
+      });
+    };
+  }
+
+  var version = "1.3.9";
+
+  var WeCropper = function WeCropper(params) {
+    var self = this;
+    var _default = {};
+
+    validator(self, DEFAULT);
+
+    Object.keys(DEFAULT).forEach(function (key) {
+      _default[key] = DEFAULT[key].default;
+    });
+    Object.assign(self, _default, params);
+
+    self.prepare();
+    self.attachPage();
+    self.createCtx();
+    self.observer();
+    self.cutt();
+    self.methods();
+    self.init();
+    self.update();
+
+    return self;
+  };
+
+  WeCropper.prototype.init = function init() {
+    var self = this;
+    var src = self.src;
+
+    self.version = version;
+
+    typeof self.onReady === 'function' && self.onReady(self.ctx, self);
+
+    if (src) {
+      self.pushOrign(src);
+    } else {
+      self.updateCanvas();
+    }
+    setTouchState(self, false, false, false);
+
+    self.oldScale = 1;
+    self.newScale = 1;
+
+    return self;
+  };
+
+  Object.assign(WeCropper.prototype, handle);
+
+  WeCropper.prototype.prepare = prepare;
+  WeCropper.prototype.observer = observer;
+  WeCropper.prototype.methods = methods;
+  WeCropper.prototype.cutt = cut;
+  WeCropper.prototype.update = update;
+
+  return WeCropper;
+
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
+
+/***/ }),
+
+/***/ 1067:
+/*!****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/emitter.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 递归使用 call 方式this指向
+                                                                                                      * @param componentName // 需要找的组件的名称
+                                                                                                      * @param eventName // 事件名称
+                                                                                                      * @param params // 需要传递的参数
+                                                                                                      */
+function _broadcast(componentName, eventName, params) {
+  // 循环子节点找到名称一样的子节点 否则 递归 当前子节点
+  this.$children.map(function (child) {
+    if (componentName === child.$options.name) {
+      child.$emit.apply(child, [eventName].concat(params));
+    } else {
+      _broadcast.apply(child, [componentName, eventName].concat(params));
+    }
+  });
+}var _default =
+{
+  methods: {
+    /**
+              * 派发 (向上查找) (一个)
+              * @param componentName // 需要找的组件的名称
+              * @param eventName // 事件名称
+              * @param params // 需要传递的参数
+              */
+    dispatch: function dispatch(componentName, eventName, params) {
+      var parent = this.$parent || this.$root; //$parent 找到最近的父节点 $root 根节点
+      var name = parent.$options.name; // 获取当前组件实例的name
+      // 如果当前有节点 && 当前没名称 且 当前名称等于需要传进来的名称的时候就去查找当前的节点
+      // 循环出当前名称的一样的组件实例
+      while (parent && (!name || name !== componentName)) {
+        parent = parent.$parent;
+        if (parent) {
+          name = parent.$options.name;
+        }
+      }
+      // 有节点表示当前找到了name一样的实例
+      if (parent) {
+        parent.$emit.apply(parent, [eventName].concat(params));
+      }
+    },
+    /**
+        * 广播 (向下查找) (广播多个)
+        * @param componentName // 需要找的组件的名称
+        * @param eventName // 事件名称
+        * @param params // 需要传递的参数
+        */
+    broadcast: function broadcast(componentName, eventName, params) {
+      _broadcast.call(this, componentName, eventName, params);
+    } } };exports.default = _default;
+
+/***/ }),
+
 /***/ 11:
-/*!**************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/index.js ***!
-  \**************************************************************************/
+/*!****************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/index.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2079,10 +3416,137 @@ var install = function install(Vue) {
 
 /***/ }),
 
-/***/ 1195:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/province.js ***!
-  \***************************************************************************************/
+/***/ 111:
+/*!*************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/pages/example/js.config.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
+{
+  groupName: '网络',
+  groupName_en: 'Network',
+  list: [
+  {
+    path: 'http',
+    icon: 'http',
+    title: 'Http 请求',
+    title_en: 'Http' }] },
+
+
+
+{
+  groupName: '全局变量',
+  groupName_en: 'Global variable',
+  list: [
+  {
+    path: 'globalVariable',
+    icon: 'globalVariable',
+    title: 'GlobalVariable 全局变量',
+    title_en: 'GlobalVariable' }] },
+
+
+
+{
+  groupName: '工具库',
+  groupName_en: 'Tool library',
+  list: [
+  {
+    path: 'debounce',
+    icon: 'debounce',
+    title: 'Throttle | Debounce 节流防抖',
+    title_en: 'Throttle | Debounce' },
+
+  {
+    path: 'deepMerge',
+    icon: 'deepMerge',
+    title: 'DeepMerge 对象深度合并',
+    title_en: 'DeepMerge' },
+  {
+    path: 'deepClone',
+    icon: 'deepClone',
+    title: 'DeepClone 对象深度克隆',
+    title_en: 'DeepClone' },
+
+  {
+    path: 'timeFormat',
+    icon: 'timeFormat',
+    title: 'TimeFormat 时间格式化',
+    title_en: 'TimeFormat' },
+  {
+    path: 'timeFrom',
+    icon: 'timeFrom',
+    title: 'TimeFrom 多久之前',
+    title_en: 'TimeFrom' },
+  {
+    path: 'guid',
+    icon: 'guid',
+    title: 'Guid 全局唯一id',
+    title_en: 'Guid' },
+  {
+    path: 'route',
+    icon: 'route',
+    title: 'Route 路由跳转',
+    title_en: 'Route' },
+  {
+    path: 'randomArray',
+    icon: 'randomArray',
+    title: 'RandomArray 数组乱序',
+    title_en: 'RandomArray' },
+  {
+    path: 'colorSwitch',
+    icon: 'colorSwitch',
+    title: 'ColorSwitch 颜色转换',
+    title_en: 'ColorSwitch' },
+  {
+    path: 'color',
+    icon: 'color',
+    title: 'Color 颜色值',
+    title_en: 'Color' },
+  {
+    path: 'queryParams',
+    icon: 'queryParams',
+    title: 'QueryParams 对象转URL参数',
+    title_en: 'QueryParams' },
+  {
+    path: 'test',
+    icon: 'test',
+    title: 'Test 规则校验',
+    title_en: 'Test' },
+  {
+    path: 'md5',
+    icon: 'md5',
+    title: 'Md5 md5加密',
+    title_en: 'Md5' },
+  {
+    path: 'random',
+    icon: 'random',
+    title: 'Random 随机数值',
+    title_en: 'Random' },
+  {
+    path: 'trim',
+    icon: 'trim',
+    title: 'Trim 去除空格',
+    title_en: 'Trim' },
+  {
+    path: 'getRect',
+    icon: 'getRect',
+    title: 'GetRect 节点信息',
+    title_en: 'GetRect' },
+  {
+    path: 'mpShare',
+    icon: 'mpShare',
+    title: 'MpShare 小程序分享',
+    title_en: 'MpShare' }] }];exports.default = _default;
+
+/***/ }),
+
+/***/ 1117:
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/province.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2091,10 +3555,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 1196:
-/*!***********************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/city.js ***!
-  \***********************************************************************************/
+/***/ 1118:
+/*!*************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/city.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2103,10 +3567,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 1197:
-/*!***********************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/area.js ***!
-  \***********************************************************************************/
+/***/ 1119:
+/*!*************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/area.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2115,84 +3579,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 12:
-/*!*************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/mixin/mixin.js ***!
-  \*************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(uni) {module.exports = {
-  data: function data() {
-    return {};
-  },
-  onLoad: function onLoad() {
-    // getRect挂载到$u上，因为这方法需要使用in(this)，所以无法把它独立成一个单独的文件导出
-    this.$u.getRect = this.$uGetRect;
-  },
-  methods: {
-    // 查询节点信息
-    // 目前此方法在支付宝小程序中无法获取组件跟接点的尺寸，为支付宝的bug(2020-07-21)
-    // 解决办法为在组件根部再套一个没有任何作用的view元素
-    $uGetRect: function $uGetRect(selector, all) {var _this = this;
-      return new Promise(function (resolve) {
-        uni.createSelectorQuery().
-        in(_this)[all ? 'selectAll' : 'select'](selector).
-        boundingClientRect(function (rect) {
-          if (all && Array.isArray(rect) && rect.length) {
-            resolve(rect);
-          }
-          if (!all && rect) {
-            resolve(rect);
-          }
-        }).
-        exec();
-      });
-    },
-    getParentData: function getParentData() {var _this2 = this;var parentName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
-      // 避免在created中去定义parent变量
-      if (!this.parent) this.parent = false;
-      // 这里的本质原理是，通过获取父组件实例(也即u-radio-group的this)
-      // 将父组件this中对应的参数，赋值给本组件(u-radio的this)的parentData对象中对应的属性
-      // 之所以需要这么做，是因为所有端中，头条小程序不支持通过this.parent.xxx去监听父组件参数的变化
-      this.parent = this.$u.$parent.call(this, parentName);
-      if (this.parent) {
-        // 历遍parentData中的属性，将parent中的同名属性赋值给parentData
-        Object.keys(this.parentData).map(function (key) {
-          _this2.parentData[key] = _this2.parent[key];
-        });
-      }
-    },
-    // 阻止事件冒泡
-    preventEvent: function preventEvent(e) {
-      e && e.stopPropagation && e.stopPropagation();
-    } },
-
-  onReachBottom: function onReachBottom() {
-    uni.$emit('uOnReachBottom');
-  },
-  beforeDestroy: function beforeDestroy() {var _this3 = this;
-    // 判断当前页面是否存在parent和chldren，一般在checkbox和checkbox-group父子联动的场景会有此情况
-    // 组件销毁时，移除子组件在父组件children数组中的实例，释放资源，避免数据混乱
-    if (this.parent && uni.$u.test.array(this.parent.children)) {
-      // 组件销毁时，移除父组件中的children数组中对应的实例
-      var childrenList = this.parent.children;
-      childrenList.map(function (child, index) {
-        // 如果相等，则移除
-        if (child === _this3) {
-          childrenList.splice(index, 1);
-        }
-      });
-    }
-  } };
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 1240:
-/*!*********************************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/components/u-parse/libs/MpHtmlParser.js ***!
-  \*********************************************************************************************************/
+/***/ 1176:
+/*!***********************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/components/u-parse/libs/MpHtmlParser.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2203,9 +3593,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
  * @author JinYufeng
  * @listens MIT
  */
-var cfg = __webpack_require__(/*! ./config.js */ 1241),
+var cfg = __webpack_require__(/*! ./config.js */ 1177),
 blankChar = cfg.blankChar,
-CssHandler = __webpack_require__(/*! ./CssHandler.js */ 1242),
+CssHandler = __webpack_require__(/*! ./CssHandler.js */ 1178),
 windowWidth = uni.getSystemInfoSync().windowWidth;
 var emoji;
 
@@ -2780,10 +4170,10 @@ module.exports = MpHtmlParser;
 
 /***/ }),
 
-/***/ 1241:
-/*!***************************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/components/u-parse/libs/config.js ***!
-  \***************************************************************************************************/
+/***/ 1177:
+/*!*****************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/components/u-parse/libs/config.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2870,14 +4260,14 @@ module.exports = cfg;
 
 /***/ }),
 
-/***/ 1242:
-/*!*******************************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/components/u-parse/libs/CssHandler.js ***!
-  \*******************************************************************************************************/
+/***/ 1178:
+/*!*********************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/components/u-parse/libs/CssHandler.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var cfg = __webpack_require__(/*! ./config.js */ 1241),
+var cfg = __webpack_require__(/*! ./config.js */ 1177),
 isLetter = function isLetter(c) {return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';};
 
 function CssHandler(tagStyle) {
@@ -2980,70 +4370,84 @@ parser.prototype.Content = function () {
 
 /***/ }),
 
-/***/ 1271:
-/*!**************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/emitter.js ***!
-  \**************************************************************************************/
+/***/ 12:
+/*!***************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/mixin/mixin.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 递归使用 call 方式this指向
-                                                                                                      * @param componentName // 需要找的组件的名称
-                                                                                                      * @param eventName // 事件名称
-                                                                                                      * @param params // 需要传递的参数
-                                                                                                      */
-function _broadcast(componentName, eventName, params) {
-  // 循环子节点找到名称一样的子节点 否则 递归 当前子节点
-  this.$children.map(function (child) {
-    if (componentName === child.$options.name) {
-      child.$emit.apply(child, [eventName].concat(params));
-    } else {
-      _broadcast.apply(child, [componentName, eventName].concat(params));
-    }
-  });
-}var _default =
-{
+/* WEBPACK VAR INJECTION */(function(uni) {module.exports = {
+  data: function data() {
+    return {};
+  },
+  onLoad: function onLoad() {
+    // getRect挂载到$u上，因为这方法需要使用in(this)，所以无法把它独立成一个单独的文件导出
+    this.$u.getRect = this.$uGetRect;
+  },
   methods: {
-    /**
-              * 派发 (向上查找) (一个)
-              * @param componentName // 需要找的组件的名称
-              * @param eventName // 事件名称
-              * @param params // 需要传递的参数
-              */
-    dispatch: function dispatch(componentName, eventName, params) {
-      var parent = this.$parent || this.$root; //$parent 找到最近的父节点 $root 根节点
-      var name = parent.$options.name; // 获取当前组件实例的name
-      // 如果当前有节点 && 当前没名称 且 当前名称等于需要传进来的名称的时候就去查找当前的节点
-      // 循环出当前名称的一样的组件实例
-      while (parent && (!name || name !== componentName)) {
-        parent = parent.$parent;
-        if (parent) {
-          name = parent.$options.name;
-        }
-      }
-      // 有节点表示当前找到了name一样的实例
-      if (parent) {
-        parent.$emit.apply(parent, [eventName].concat(params));
+    // 查询节点信息
+    // 目前此方法在支付宝小程序中无法获取组件跟接点的尺寸，为支付宝的bug(2020-07-21)
+    // 解决办法为在组件根部再套一个没有任何作用的view元素
+    $uGetRect: function $uGetRect(selector, all) {var _this = this;
+      return new Promise(function (resolve) {
+        uni.createSelectorQuery().
+        in(_this)[all ? 'selectAll' : 'select'](selector).
+        boundingClientRect(function (rect) {
+          if (all && Array.isArray(rect) && rect.length) {
+            resolve(rect);
+          }
+          if (!all && rect) {
+            resolve(rect);
+          }
+        }).
+        exec();
+      });
+    },
+    getParentData: function getParentData() {var _this2 = this;var parentName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+      // 避免在created中去定义parent变量
+      if (!this.parent) this.parent = false;
+      // 这里的本质原理是，通过获取父组件实例(也即u-radio-group的this)
+      // 将父组件this中对应的参数，赋值给本组件(u-radio的this)的parentData对象中对应的属性
+      // 之所以需要这么做，是因为所有端中，头条小程序不支持通过this.parent.xxx去监听父组件参数的变化
+      this.parent = this.$u.$parent.call(this, parentName);
+      if (this.parent) {
+        // 历遍parentData中的属性，将parent中的同名属性赋值给parentData
+        Object.keys(this.parentData).map(function (key) {
+          _this2.parentData[key] = _this2.parent[key];
+        });
       }
     },
-    /**
-        * 广播 (向下查找) (广播多个)
-        * @param componentName // 需要找的组件的名称
-        * @param eventName // 事件名称
-        * @param params // 需要传递的参数
-        */
-    broadcast: function broadcast(componentName, eventName, params) {
-      _broadcast.call(this, componentName, eventName, params);
-    } } };exports.default = _default;
+    // 阻止事件冒泡
+    preventEvent: function preventEvent(e) {
+      e && e.stopPropagation && e.stopPropagation();
+    } },
+
+  onReachBottom: function onReachBottom() {
+    uni.$emit('uOnReachBottom');
+  },
+  beforeDestroy: function beforeDestroy() {var _this3 = this;
+    // 判断当前页面是否存在parent和chldren，一般在checkbox和checkbox-group父子联动的场景会有此情况
+    // 组件销毁时，移除子组件在父组件children数组中的实例，释放资源，避免数据混乱
+    if (this.parent && uni.$u.test.array(this.parent.children)) {
+      // 组件销毁时，移除父组件中的children数组中对应的实例
+      var childrenList = this.parent.children;
+      childrenList.map(function (child, index) {
+        // 如果相等，则移除
+        if (child === _this3) {
+          childrenList.splice(index, 1);
+        }
+      });
+    }
+  } };
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 1272:
-/*!**********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/async-validator.js ***!
-  \**********************************************************************************************/
+/***/ 1207:
+/*!************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/util/async-validator.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3070,7 +4474,7 @@ function _broadcast(componentName, eventName, params) {
 var formatRegExp = /%[sdj%]/g;
 var warning = function warning() {}; // don't print warning message when in production env or node runtime
 
-if (typeof process !== 'undefined' && Object({"NODE_ENV":"development","VUE_APP_NAME":"KYLMS-Driver-uniapp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
+if (typeof process !== 'undefined' && Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}) && "development" !== 'production' && typeof window !==
 'undefined' && typeof document !== 'undefined') {
   warning = function warning(type, errors) {
     if (typeof console !== 'undefined' && console.warn) {
@@ -4403,11 +5807,11 @@ Schema.warning = warning;
 Schema.messages = messages;var _default =
 
 Schema;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 1273)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 1208)))
 
 /***/ }),
 
-/***/ 1273:
+/***/ 1208:
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -4438,7 +5842,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 1274);
+        if (!path) path = __webpack_require__(/*! path */ 1209);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -4452,7 +5856,7 @@ exports.features = {};
 
 /***/ }),
 
-/***/ 1274:
+/***/ 1209:
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -4762,14 +6166,99 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 1273)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 1208)))
+
+/***/ }),
+
+/***/ 122:
+/*!*******************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/pages/example/template.config.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
+{
+  groupName: '部件',
+  groupName_en: 'Parts',
+  list: [
+  {
+    path: 'coupon',
+    icon: 'coupon',
+    title: 'Coupon 优惠券',
+    title_en: 'Coupon' }] },
+
+
+
+{
+  groupName: '页面',
+  groupName_en: 'Page',
+  list: [
+  {
+    path: '/pages/template/wxCenter/index',
+    icon: 'wxCenter',
+    title: 'WxCenter 仿微信个人中心',
+    title_en: 'WxCenter' },
+
+  // {
+  // 	path: '/pages/template/douyin/index',
+  // 	icon: 'douyin',
+  // 	title: 'Douyin 仿抖音',
+  // },
+  {
+    path: '/pages/template/keyboardPay/index',
+    icon: 'keyboardPay',
+    title: 'KeyboardPay 自定义键盘支付模板',
+    title_en: 'KeyboardPay' },
+
+  {
+    path: '/pages/template/mallMenu/index1',
+    icon: 'mall_menu_1',
+    title: 'MallMenu 垂直分类(左右独立)',
+    title_en: 'MallMenu 1' },
+  {
+    path: '/pages/template/mallMenu/index2',
+    icon: 'mall_menu_2',
+    title: 'MallMenu 垂直分类(左右联动)',
+    title_en: 'MallMenu 2' },
+  {
+    path: 'submitBar',
+    icon: 'submitBar',
+    title: 'SubmitBar 提交订单栏',
+    title_en: 'SubmitBar' },
+  {
+    path: 'comment',
+    icon: 'comment',
+    title: 'Comment 评论列表',
+    title_en: 'Comment' },
+  {
+    path: 'order',
+    icon: 'order',
+    title: 'Order 订单列表',
+    title_en: 'Order' },
+  {
+    path: 'login',
+    icon: 'login',
+    title: 'Login 登录界面',
+    title_en: 'Login' },
+  {
+    path: 'address',
+    icon: 'address',
+    title: 'Address 收货地址',
+    title_en: 'Address' },
+  {
+    path: 'citySelect',
+    icon: 'citySelect',
+    title: 'CitySelect 城市选择',
+    title_en: 'CitySelect' }] }];exports.default = _default;
 
 /***/ }),
 
 /***/ 13:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/request/index.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/request/index.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4948,9 +6437,9 @@ new Request();exports.default = _default;
 /***/ }),
 
 /***/ 14:
-/*!********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/deepMerge.js ***!
-  \********************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/deepMerge.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4989,9 +6478,9 @@ deepMerge;exports.default = _default;
 /***/ }),
 
 /***/ 15:
-/*!********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/deepClone.js ***!
-  \********************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/deepClone.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5023,9 +6512,9 @@ deepClone;exports.default = _default;
 /***/ }),
 
 /***/ 16:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/test.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/test.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5215,10 +6704,10 @@ function jsonString(value) {
    * 是否数组
    */
 function array(value) {
-  if (typeof Array.isArray === "function") {
+  if (typeof Array.isArray === 'function') {
     return Array.isArray(value);
   } else {
-    return Object.prototype.toString.call(value) === "[object Array]";
+    return Object.prototype.toString.call(value) === '[object Array]';
   }
 }
 
@@ -5234,8 +6723,16 @@ function object(value) {
    */
 function code(value) {var len = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
   return new RegExp("^\\d{".concat(len, "}$")).test(value);
-}var _default =
+}
 
+function DP_Mobile(value) {
+  var s = '' + value;
+  var regular = /(\d{3})\d*(\d{4})/;
+  if (empty(s)) {
+    return '';
+  }
+  return s && s.replace(regular, '$1****$2');
+}var _default =
 
 {
   email: email,
@@ -5260,14 +6757,15 @@ function code(value) {var len = arguments.length > 1 && arguments[1] !== undefin
   landline: landline,
   object: object,
   array: array,
-  code: code };exports.default = _default;
+  code: code,
+  DP_Mobile: DP_Mobile };exports.default = _default;
 
 /***/ }),
 
 /***/ 17:
-/*!**********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/queryParams.js ***!
-  \**********************************************************************************************/
+/*!************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/queryParams.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5334,17 +6832,17 @@ queryParams;exports.default = _default;
 /***/ }),
 
 /***/ 18:
-/*!****************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/route.js ***!
-  \****************************************************************************************/
+/*!******************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/route.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * 并且带有路由拦截功能
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */var
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  * 并且带有路由拦截功能
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  */var
 
 Router = /*#__PURE__*/function () {
   function Router() {_classCallCheck(this, Router);
@@ -5467,6 +6965,27 @@ new Router().route;exports.default = _default;
 
 /***/ }),
 
+/***/ 1846:
+/*!******************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/pages/main/userCenter.config.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
+{
+  // groupName: '基础组件',
+  // groupName_en: 'Basic components',
+  list: [
+  {
+    path: '/pages/userCenter/setting/index',
+    icon: 'setting',
+    title: '设置',
+    title_en: 'Setting' }] }];exports.default = _default;
+
+/***/ }),
+
 /***/ 19:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
@@ -5489,7 +7008,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ 20);
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(global) {/*!
  * Vue.js v2.6.11
- * (c) 2014-2021 Evan You
+ * (c) 2014-2020 Evan You
  * Released under the MIT License.
  */
 /*  */
@@ -8133,7 +9652,7 @@ function renderList (
       var iterator = val[Symbol.iterator]();
       var result = iterator.next();
       while (!result.done) {
-        ret.push(render(result.value, ret.length, i, i++)); // fixed by xxxxxx
+        ret.push(render(result.value, ret.length, i++, i)); // fixed by xxxxxx
         result = iterator.next();
       }
     } else {
@@ -11004,7 +12523,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"KYLMS-Driver-uniapp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -11025,14 +12544,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"KYLMS-Driver-uniapp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"KYLMS-Driver-uniapp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -11118,7 +12637,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"KYLMS-Driver-uniapp","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -11448,7 +12967,6 @@ var LIFECYCLE_HOOKS$1 = [
     'onError',
     'onUnhandledRejection',
     //Page
-    'onInit',
     'onLoad',
     // 'onShow',
     'onReady',
@@ -12307,9 +13825,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 22:
-/*!*********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/timeFormat.js ***!
-  \*********************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/timeFormat.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12369,9 +13887,9 @@ timeFormat;exports.default = _default;
 /***/ }),
 
 /***/ 23:
-/*!*******************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/timeFrom.js ***!
-  \*******************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/timeFrom.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12427,9 +13945,9 @@ timeFrom;exports.default = _default;
 /***/ }),
 
 /***/ 24:
-/*!************************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/colorGradient.js ***!
-  \************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/colorGradient.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12571,9 +14089,9 @@ function colorToRgba(color) {var alpha = arguments.length > 1 && arguments[1] !=
 /***/ }),
 
 /***/ 25:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/guid.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/guid.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12623,9 +14141,9 @@ guid;exports.default = _default;
 /***/ }),
 
 /***/ 26:
-/*!****************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/color.js ***!
-  \****************************************************************************************/
+/*!******************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/color.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12671,9 +14189,9 @@ color;exports.default = _default;
 /***/ }),
 
 /***/ 27:
-/*!********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/type2icon.js ***!
-  \********************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/type2icon.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12717,9 +14235,9 @@ type2icon;exports.default = _default;
 /***/ }),
 
 /***/ 28:
-/*!**********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/randomArray.js ***!
-  \**********************************************************************************************/
+/*!************************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/randomArray.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12735,9 +14253,9 @@ randomArray;exports.default = _default;
 /***/ }),
 
 /***/ 29:
-/*!******************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/addUnit.js ***!
-  \******************************************************************************************/
+/*!********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/addUnit.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12785,9 +14303,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 30:
-/*!*****************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/random.js ***!
-  \*****************************************************************************************/
+/*!*******************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/random.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12806,9 +14324,9 @@ random;exports.default = _default;
 /***/ }),
 
 /***/ 31:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/trim.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/trim.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12832,9 +14350,9 @@ trim;exports.default = _default;
 /***/ }),
 
 /***/ 32:
-/*!****************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/toast.js ***!
-  \****************************************************************************************/
+/*!******************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/toast.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12853,9 +14371,9 @@ toast;exports.default = _default;
 /***/ }),
 
 /***/ 33:
-/*!********************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/getParent.js ***!
-  \********************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/getParent.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12911,9 +14429,9 @@ function getParent(name, keys) {
 /***/ }),
 
 /***/ 34:
-/*!******************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/$parent.js ***!
-  \******************************************************************************************/
+/*!********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/$parent.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12940,9 +14458,9 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 /***/ }),
 
 /***/ 35:
-/*!**************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/sys.js ***!
-  \**************************************************************************************/
+/*!****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/sys.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12959,9 +14477,9 @@ function sys() {
 /***/ }),
 
 /***/ 36:
-/*!*******************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/debounce.js ***!
-  \*******************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/debounce.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12999,9 +14517,9 @@ debounce;exports.default = _default;
 /***/ }),
 
 /***/ 37:
-/*!*******************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/throttle.js ***!
-  \*******************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/function/throttle.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13042,9 +14560,9 @@ throttle;exports.default = _default;
 /***/ }),
 
 /***/ 38:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/config/config.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/config/config.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13066,9 +14584,9 @@ var version = '1.8.4';var _default =
 /***/ }),
 
 /***/ 39:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/config/zIndex.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/config/zIndex.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13096,9 +14614,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 4:
-/*!*******************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/pages.json ***!
-  \*******************************************************************/
+/*!*********************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/pages.json ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13107,15 +14625,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 40:
-/*!***********************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/store/index.js ***!
-  \***********************************************************************/
+/*!*************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/store/index.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
 var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 41));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
 _vue.default.use(_vuex.default);
 
 var lifeData = {};
@@ -13128,7 +14647,7 @@ try {
 }
 
 // 需要永久存储，且下次APP启动需要取出的，在state中的变量名
-var saveStateKeys = ['vuex_user', 'vuex_token'];
+var saveStateKeys = ['vuex_user', 'vuex_access_token', 'vuex_expires_in'];
 
 // 保存变量到本地存储中
 var saveLifeData = function saveLifeData(key, value) {
@@ -13147,30 +14666,42 @@ var store = new _vuex.default.Store({
   state: {
     // 如果上面从本地获取的lifeData对象下有对应的属性，就赋值给state中对应的变量
     // 加上vuex_前缀，是防止变量名冲突，也让人一目了然
-    vuex_user: lifeData.vuex_user ? lifeData.vuex_user : { name: '明月' },
-    vuex_token: lifeData.vuex_token ? lifeData.vuex_token : '',
+    vuex_user: lifeData.vuex_user ? lifeData.vuex_user : {},
     // 如果vuex_version无需保存到本地永久存储，无需lifeData.vuex_version方式
     vuex_version: '1.0.1',
     vuex_demo: '绛紫',
-    access_token: '',
-    expires_in: '',
+    vuex_access_token: lifeData.vuex_access_token ? lifeData.vuex_access_token : '',
+    vuex_expires_in: lifeData.vuex_expires_in ? lifeData.vuex_expires_in : '',
     // 自定义tabbar数据
-    vuex_tabbar: [{
-      iconPath: "/static/uview/example/component.png",
-      selectedIconPath: "/static/uview/example/component_select.png",
+    vuex_tabbar: [
+    {
+      pagePath: "pages/workbench/index",
+      iconPath: "static/uview/example/component.png",
+      selectedIconPath: "static/uview/example/component_select.png",
+      text: "工作台" },
+
+    {
+      pagePath: "pages/main/userCenter",
+      iconPath: "static/uview/example/template.png",
+      selectedIconPath: "static/uview/example/template_select.png",
+      text: "个人中心" },
+
+    {
+      iconPath: '/static/uview/example/component.png',
+      selectedIconPath: '/static/uview/example/component_select.png',
       text: '组件',
       pagePath: '/pages/example/components' },
 
     {
-      iconPath: "/static/uview/example/js.png",
-      selectedIconPath: "/static/uview/example/js_select.png",
+      iconPath: '/static/uview/example/js.png',
+      selectedIconPath: '/static/uview/example/js_select.png',
       text: '工具',
       midButton: true,
       pagePath: '/pages/example/js' },
 
     {
-      iconPath: "/static/uview/example/template.png",
-      selectedIconPath: "/static/uview/example/template_select.png",
+      iconPath: '/static/uview/example/template.png',
+      selectedIconPath: '/static/uview/example/template_select.png',
       text: '模板',
       pagePath: '/pages/example/template' }] },
 
@@ -14319,15 +15850,18 @@ var index = {
 /***/ }),
 
 /***/ 42:
-/*!*****************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/common/locales/zh.js ***!
-  \*****************************************************************************/
+/*!*******************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/common/locales/zh.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   // 可以以页面为单位来写，比如首页的内容，写在index字段，个人中心写在center，共同部分写在common部分
+  workbench: {
+    desc: '检查你的工作进度' },
+
   components: {
     desc: '众多组件覆盖开发过程的各个需求，组件功能丰富，多端兼容。让你快速集成，开箱即用' },
 
@@ -14338,6 +15872,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     desc: '收集众多的常用页面和布局，减少开发者的重复工作，让你专注逻辑，事半功倍' },
 
   nav: {
+    workbench: '工作台',
+    userCenter: '个人中心',
     components: '组件',
     js: '工具',
     template: '模板' },
@@ -14349,15 +15885,18 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 43:
-/*!*****************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/common/locales/en.js ***!
-  \*****************************************************************************/
+/*!*******************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/common/locales/en.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   // 可以以页面为单位来写，比如首页的内容，写在index字段，个人中心写在center，共同部分写在common部分
+  workbench: {
+    desc: 'Check your work progress' },
+
   components: {
     desc: 'Numerous components cover the various requirements of the development process, and the components are rich in functions and compatible with multiple terminals. Let you integrate quickly, out of the box' },
 
@@ -14368,6 +15907,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     desc: 'Collection of many commonly used pages and layouts, reducing the repetitive work of developers, allowing you to focus on logic and get twice the result with half the effort' },
 
   nav: {
+    workbench: 'Workbench',
+    userCenter: 'UserCenter',
     components: 'Components',
     js: 'JS',
     template: 'Template' },
@@ -14379,9 +15920,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 44:
-/*!*******************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/common/vue-i18n.min.js ***!
-  \*******************************************************************************/
+/*!*********************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/common/vue-i18n.min.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14395,19 +15936,29 @@ var t, e;t = this, e = function e() {"use strict";var t = ["style", "currency", 
 /***/ }),
 
 /***/ 45:
-/*!***********************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/common/http.interceptor.js ***!
-  \***********************************************************************************/
+/*!*************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/common/http.interceptor.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 这里的vm，就是我们在vue文件里面的this，所以我们能在这里获取vuex的变量，比如存放在里面的token
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+var _errorCode = _interopRequireDefault(__webpack_require__(/*! ./errorCode */ 46));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 这里的vm，就是我们在vue文件里面的this，所以我们能在这里获取vuex的变量，比如存放在里面的token
 // 同时，我们也可以在此使用getApp().globalData，如果你把token放在getApp().globalData的话，也是可以使用的
+var baseUrl = 'http://localhost:8080';
 var whileList = ['/system/sms/code', '/auth/login', '/auth/user/mobile'];
+
+if (false) {} else {
+  console.log('开发环境');
+  // baseUrl = 'http://kaiyu.wicp.vip:39592'
+  baseUrl = 'http://tunnel.kaiyu.work:55938';
+}
+
 var install = function install(Vue, vm) {
   Vue.prototype.$u.http.setConfig({
-    baseUrl: 'http://localhost:8080'
+    baseUrl: baseUrl
     // 如果将此值设置为true，拦截回调中将会返回服务端返回的所有数据response，而不是response.data
     // 设置为true后，就需要在this.$u.http.interceptor.response进行多一次的判断，请打印查看具体值
     // originalData: true,
@@ -14419,17 +15970,17 @@ var install = function install(Vue, vm) {
   // 请求拦截，配置Token等参数
   Vue.prototype.$u.http.interceptor.request = function (config) {
     config.header.Token = 'xxxxxx';
-    var accessToken = vm.access_token;
-    var expiresIn = vm.expires_in;
-    console.log(accessToken, expiresIn);
+    var accessToken = vm.vuex_access_token;
+    var expiresIn = vm.vuex_expires_in;
     if (accessToken) {
       config.header = { 'Authorization': "Bearer ".concat(accessToken) };
     }
     if (whileList.indexOf(config.url) === -1 && !accessToken) {
       //跳转到登录页
-      return uni.navigateTo({
-        url: '/pages/auth/login' });
+      uni.navigateTo({
+        url: '/pages/auth/login?navigateType=1' });
 
+      return false;
     }
     // 方式一，存放在vuex的token，假设使用了uView封装的vuex方式，见：https://uviewui.com/components/globalVariable.html
     // config.header.token = vm.token;
@@ -14448,15 +15999,44 @@ var install = function install(Vue, vm) {
   };
   // 响应拦截，判断状态码是否通过
   Vue.prototype.$u.http.interceptor.response = function (res) {
+    var code = res.code || 200;
     // 如果把originalData设置为了true，这里得到将会是服务器返回的所有的原始数据
     // 判断可能变成了res.statueCode，或者res.data.code之类的，请打印查看结果
-    if (res.code == 200) {
+    var msg = _errorCode.default[code] || res.msg || _errorCode.default['default'];
+    if (code == 200) {
       // 如果把originalData设置为了true，这里return回什么，this.$u.post的then回调中就会得到什么
       return res.data;
-    } else return false;
+    } else {
+      if (code === 401) {
+
+        uni.navigateTo({
+          url: '/pages/auth/login?navigateType=2' });
+
+      } else if (code === 500) {
+        uni.showToast({
+          title: msg,
+          icon: 'none',
+          duration: 2000,
+          position: 'top' });
+
+      } else if (code === 403) {
+        console.log(4030303030303);
+        uni.navigateTo({
+          url: '/pages/auth/login?navigateType=3' });
+
+      } else
+      if (code !== 200) {
+        uni.showToast({
+          title: msg,
+          icon: 'none',
+          duration: 2000,
+          position: 'top' });
+
+      }
+      return false;
+    }
   };
 };var _default =
-
 {
   install: install };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
@@ -14464,9 +16044,25 @@ var install = function install(Vue, vm) {
 /***/ }),
 
 /***/ 46:
-/*!***************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/common/http.api.js ***!
-  \***************************************************************************/
+/*!******************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/common/errorCode.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  '401': '认证失败，无法访问系统资源',
+  '403': '当前操作没有权限',
+  '404': '访问资源不存在',
+  'default': '系统未知错误,请反馈给管理员' };exports.default = _default;
+
+/***/ }),
+
+/***/ 47:
+/*!*****************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/common/http.api.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14495,10 +16091,10 @@ var install = function install(Vue, vm) {
 
 /***/ }),
 
-/***/ 47:
-/*!**************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/store/$u.mixin.js ***!
-  \**************************************************************************/
+/***/ 48:
+/*!****************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/store/$u.mixin.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14531,10 +16127,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ 48:
-/*!***************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/libs/mixin/mpShare.js ***!
-  \***************************************************************************************/
+/***/ 49:
+/*!*****************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/uview-ui/libs/mixin/mpShare.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -14557,10 +16153,31 @@ module.exports = {
 
 /***/ }),
 
-/***/ 55:
-/*!*******************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/pages/example/components.config.js ***!
-  \*******************************************************************************************/
+/***/ 56:
+/*!**********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/pages/workbench/workbench.config.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
+{
+  // groupName: '基础组件',
+  // groupName_en: 'Basic components',
+  list: [
+  {
+    path: '/pages/components/checkMission/index',
+    icon: 'checkbox',
+    title: '检查任务',
+    title_en: 'Check Mission' }] }];exports.default = _default;
+
+/***/ }),
+
+/***/ 91:
+/*!*********************************************************************************!*\
+  !*** /Users/hamster/Git/KYLMS-Driver-uniapp/pages/example/components.config.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14951,1487 +16568,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     icon: 'loading',
     title: 'Loading 加载动画',
     title_en: 'Loading' }] }];exports.default = _default;
-
-/***/ }),
-
-/***/ 66:
-/*!**********************************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/uview-ui/components/u-avatar-cropper/weCropper.js ***!
-  \**********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(uni, global) {/**
- * we-cropper v1.3.9
- * (c) 2020 dlhandsome
- * @license MIT
- */
-(function (global, factory) {
-   true ? module.exports = factory() :
-  undefined;
-})(this, function () {
-  'use strict';
-
-  var device = void 0;
-  var TOUCH_STATE = ['touchstarted', 'touchmoved', 'touchended'];
-
-  function firstLetterUpper(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
-
-  function setTouchState(instance) {
-    var arg = [],
-    len = arguments.length - 1;
-    while (len-- > 0) {arg[len] = arguments[len + 1];}
-
-    TOUCH_STATE.forEach(function (key, i) {
-      if (arg[i] !== undefined) {
-        instance[key] = arg[i];
-      }
-    });
-  }
-
-  function validator(instance, o) {
-    Object.defineProperties(instance, o);
-  }
-
-  function getDevice() {
-    if (!device) {
-      device = uni.getSystemInfoSync();
-    }
-    return device;
-  }
-
-  var tmp = {};
-
-  var ref = getDevice();
-  var pixelRatio = ref.pixelRatio;
-
-  var DEFAULT = {
-    id: {
-      default: 'cropper',
-      get: function get() {
-        return tmp.id;
-      },
-      set: function set(value) {
-        if (typeof value !== 'string') {
-          console.error("id：" + value + " is invalid");
-        }
-        tmp.id = value;
-      } },
-
-    width: {
-      default: 750,
-      get: function get() {
-        return tmp.width;
-      },
-      set: function set(value) {
-        if (typeof value !== 'number') {
-          console.error("width：" + value + " is invalid");
-        }
-        tmp.width = value;
-      } },
-
-    height: {
-      default: 750,
-      get: function get() {
-        return tmp.height;
-      },
-      set: function set(value) {
-        if (typeof value !== 'number') {
-          console.error("height：" + value + " is invalid");
-        }
-        tmp.height = value;
-      } },
-
-    pixelRatio: {
-      default: pixelRatio,
-      get: function get() {
-        return tmp.pixelRatio;
-      },
-      set: function set(value) {
-        if (typeof value !== 'number') {
-          console.error("pixelRatio：" + value + " is invalid");
-        }
-        tmp.pixelRatio = value;
-      } },
-
-    scale: {
-      default: 2.5,
-      get: function get() {
-        return tmp.scale;
-      },
-      set: function set(value) {
-        if (typeof value !== 'number') {
-          console.error("scale：" + value + " is invalid");
-        }
-        tmp.scale = value;
-      } },
-
-    zoom: {
-      default: 5,
-      get: function get() {
-        return tmp.zoom;
-      },
-      set: function set(value) {
-        if (typeof value !== 'number') {
-          console.error("zoom：" + value + " is invalid");
-        } else if (value < 0 || value > 10) {
-          console.error("zoom should be ranged in 0 ~ 10");
-        }
-        tmp.zoom = value;
-      } },
-
-    src: {
-      default: '',
-      get: function get() {
-        return tmp.src;
-      },
-      set: function set(value) {
-        if (typeof value !== 'string') {
-          console.error("src：" + value + " is invalid");
-        }
-        tmp.src = value;
-      } },
-
-    cut: {
-      default: {},
-      get: function get() {
-        return tmp.cut;
-      },
-      set: function set(value) {
-        if (typeof value !== 'object') {
-          console.error("cut：" + value + " is invalid");
-        }
-        tmp.cut = value;
-      } },
-
-    boundStyle: {
-      default: {},
-      get: function get() {
-        return tmp.boundStyle;
-      },
-      set: function set(value) {
-        if (typeof value !== 'object') {
-          console.error("boundStyle：" + value + " is invalid");
-        }
-        tmp.boundStyle = value;
-      } },
-
-    onReady: {
-      default: null,
-      get: function get() {
-        return tmp.ready;
-      },
-      set: function set(value) {
-        tmp.ready = value;
-      } },
-
-    onBeforeImageLoad: {
-      default: null,
-      get: function get() {
-        return tmp.beforeImageLoad;
-      },
-      set: function set(value) {
-        tmp.beforeImageLoad = value;
-      } },
-
-    onImageLoad: {
-      default: null,
-      get: function get() {
-        return tmp.imageLoad;
-      },
-      set: function set(value) {
-        tmp.imageLoad = value;
-      } },
-
-    onBeforeDraw: {
-      default: null,
-      get: function get() {
-        return tmp.beforeDraw;
-      },
-      set: function set(value) {
-        tmp.beforeDraw = value;
-      } } };
-
-
-
-  var ref$1 = getDevice();
-  var windowWidth = ref$1.windowWidth;
-
-  function prepare() {
-    var self = this;
-
-    // v1.4.0 版本中将不再自动绑定we-cropper实例
-    self.attachPage = function () {
-      var pages = getCurrentPages();
-      // 获取到当前page上下文
-      var pageContext = pages[pages.length - 1];
-      // 把this依附在Page上下文的wecropper属性上，便于在page钩子函数中访问
-      Object.defineProperty(pageContext, 'wecropper', {
-        get: function get() {
-          console.warn(
-          'Instance will not be automatically bound to the page after v1.4.0\n\n' +
-          'Please use a custom instance name instead\n\n' +
-          'Example: \n' +
-          'this.mycropper = new WeCropper(options)\n\n' +
-          '// ...\n' +
-          'this.mycropper.getCropperImage()');
-
-          return self;
-        },
-        configurable: true });
-
-    };
-
-    self.createCtx = function () {
-      var id = self.id;
-      var targetId = self.targetId;
-
-      if (id) {
-        self.ctx = self.ctx || uni.createCanvasContext(id);
-        self.targetCtx = self.targetCtx || uni.createCanvasContext(targetId);
-      } else {
-        console.error("constructor: create canvas context failed, 'id' must be valuable");
-      }
-    };
-
-    self.deviceRadio = windowWidth / 750;
-  }
-
-  var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !==
-  'undefined' ? self : {};
-
-
-
-
-
-  function createCommonjsModule(fn, module) {
-    return module = {
-      exports: {} },
-    fn(module, module.exports), module.exports;
-  }
-
-  var tools = createCommonjsModule(function (module, exports) {
-    /**
-                                                                * String type check
-                                                                */
-    exports.isStr = function (v) {
-      return typeof v === 'string';
-    };
-    /**
-        * Number type check
-        */
-    exports.isNum = function (v) {
-      return typeof v === 'number';
-    };
-    /**
-        * Array type check
-        */
-    exports.isArr = Array.isArray;
-    /**
-                                    * undefined type check
-                                    */
-    exports.isUndef = function (v) {
-      return v === undefined;
-    };
-
-    exports.isTrue = function (v) {
-      return v === true;
-    };
-
-    exports.isFalse = function (v) {
-      return v === false;
-    };
-    /**
-        * Function type check
-        */
-    exports.isFunc = function (v) {
-      return typeof v === 'function';
-    };
-    /**
-        * Quick object check - this is primarily used to tell
-        * Objects from primitive values when we know the value
-        * is a JSON-compliant type.
-        */
-    exports.isObj = exports.isObject = function (obj) {
-      return obj !== null && typeof obj === 'object';
-    };
-
-    /**
-        * Strict object type check. Only returns true
-        * for plain JavaScript objects.
-        */
-    var _toString = Object.prototype.toString;
-    exports.isPlainObject = function (obj) {
-      return _toString.call(obj) === '[object Object]';
-    };
-
-    /**
-        * Check whether the object has the property.
-        */
-    var hasOwnProperty = Object.prototype.hasOwnProperty;
-    exports.hasOwn = function (obj, key) {
-      return hasOwnProperty.call(obj, key);
-    };
-
-    /**
-        * Perform no operation.
-        * Stubbing args to make Flow happy without leaving useless transpiled code
-        * with ...rest (https://flow.org/blog/2017/05/07/Strict-Function-Call-Arity/)
-        */
-    exports.noop = function (a, b, c) {};
-
-    /**
-                                           * Check if val is a valid array index.
-                                           */
-    exports.isValidArrayIndex = function (val) {
-      var n = parseFloat(String(val));
-      return n >= 0 && Math.floor(n) === n && isFinite(val);
-    };
-  });
-
-  var tools_7 = tools.isFunc;
-  var tools_10 = tools.isPlainObject;
-
-  var EVENT_TYPE = ['ready', 'beforeImageLoad', 'beforeDraw', 'imageLoad'];
-
-  function observer() {
-    var self = this;
-
-    self.on = function (event, fn) {
-      if (EVENT_TYPE.indexOf(event) > -1) {
-        if (tools_7(fn)) {
-          event === 'ready' ?
-          fn(self) :
-          self["on" + firstLetterUpper(event)] = fn;
-        }
-      } else {
-        console.error("event: " + event + " is invalid");
-      }
-      return self;
-    };
-  }
-
-  function wxPromise(fn) {
-    return function (obj) {
-      var args = [],
-      len = arguments.length - 1;
-      while (len-- > 0) {args[len] = arguments[len + 1];}
-
-      if (obj === void 0) obj = {};
-      return new Promise(function (resolve, reject) {
-        obj.success = function (res) {
-          resolve(res);
-        };
-        obj.fail = function (err) {
-          reject(err);
-        };
-        fn.apply(void 0, [obj].concat(args));
-      });
-    };
-  }
-
-  function draw(ctx, reserve) {
-    if (reserve === void 0) reserve = false;
-
-    return new Promise(function (resolve) {
-      ctx.draw(reserve, resolve);
-    });
-  }
-
-  var getImageInfo = wxPromise(uni.getImageInfo);
-
-  var canvasToTempFilePath = wxPromise(uni.canvasToTempFilePath);
-
-  var base64 = createCommonjsModule(function (module, exports) {
-    /*! http://mths.be/base64 v0.1.0 by @mathias | MIT license */
-    (function (root) {
-
-      // Detect free variables `exports`.
-      var freeExports =  true && exports;
-
-      // Detect free variable `module`.
-      var freeModule =  true && module &&
-      module.exports == freeExports && module;
-
-      // Detect free variable `global`, from Node.js or Browserified code, and use
-      // it as `root`.
-      var freeGlobal = typeof commonjsGlobal == 'object' && commonjsGlobal;
-      if (freeGlobal.global === freeGlobal || freeGlobal.window === freeGlobal) {
-        root = freeGlobal;
-      }
-
-      /*--------------------------------------------------------------------------*/
-
-      var InvalidCharacterError = function InvalidCharacterError(message) {
-        this.message = message;
-      };
-      InvalidCharacterError.prototype = new Error();
-      InvalidCharacterError.prototype.name = 'InvalidCharacterError';
-
-      var error = function error(message) {
-        // Note: the error messages used throughout this file match those used by
-        // the native `atob`/`btoa` implementation in Chromium.
-        throw new InvalidCharacterError(message);
-      };
-
-      var TABLE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
-      // http://whatwg.org/html/common-microsyntaxes.html#space-character
-      var REGEX_SPACE_CHARACTERS = /[\t\n\f\r ]/g;
-
-      // `decode` is designed to be fully compatible with `atob` as described in the
-      // HTML Standard. http://whatwg.org/html/webappapis.html#dom-windowbase64-atob
-      // The optimized base64-decoding algorithm used is based on @atk’s excellent
-      // implementation. https://gist.github.com/atk/1020396
-      var decode = function decode(input) {
-        input = String(input).
-        replace(REGEX_SPACE_CHARACTERS, '');
-        var length = input.length;
-        if (length % 4 == 0) {
-          input = input.replace(/==?$/, '');
-          length = input.length;
-        }
-        if (
-        length % 4 == 1 ||
-        // http://whatwg.org/C#alphanumeric-ascii-characters
-        /[^+a-zA-Z0-9/]/.test(input))
-        {
-          error(
-          'Invalid character: the string to be decoded is not correctly encoded.');
-
-        }
-        var bitCounter = 0;
-        var bitStorage;
-        var buffer;
-        var output = '';
-        var position = -1;
-        while (++position < length) {
-          buffer = TABLE.indexOf(input.charAt(position));
-          bitStorage = bitCounter % 4 ? bitStorage * 64 + buffer : buffer;
-          // Unless this is the first of a group of 4 characters…
-          if (bitCounter++ % 4) {
-            // …convert the first 8 bits to a single ASCII character.
-            output += String.fromCharCode(
-            0xFF & bitStorage >> (-2 * bitCounter & 6));
-
-          }
-        }
-        return output;
-      };
-
-      // `encode` is designed to be fully compatible with `btoa` as described in the
-      // HTML Standard: http://whatwg.org/html/webappapis.html#dom-windowbase64-btoa
-      var encode = function encode(input) {
-        input = String(input);
-        if (/[^\0-\xFF]/.test(input)) {
-          // Note: no need to special-case astral symbols here, as surrogates are
-          // matched, and the input is supposed to only contain ASCII anyway.
-          error(
-          'The string to be encoded contains characters outside of the ' +
-          'Latin1 range.');
-
-        }
-        var padding = input.length % 3;
-        var output = '';
-        var position = -1;
-        var a;
-        var b;
-        var c;
-        var buffer;
-        // Make sure any padding is handled outside of the loop.
-        var length = input.length - padding;
-
-        while (++position < length) {
-          // Read three bytes, i.e. 24 bits.
-          a = input.charCodeAt(position) << 16;
-          b = input.charCodeAt(++position) << 8;
-          c = input.charCodeAt(++position);
-          buffer = a + b + c;
-          // Turn the 24 bits into four chunks of 6 bits each, and append the
-          // matching character for each of them to the output.
-          output +=
-          TABLE.charAt(buffer >> 18 & 0x3F) +
-          TABLE.charAt(buffer >> 12 & 0x3F) +
-          TABLE.charAt(buffer >> 6 & 0x3F) +
-          TABLE.charAt(buffer & 0x3F);
-
-        }
-
-        if (padding == 2) {
-          a = input.charCodeAt(position) << 8;
-          b = input.charCodeAt(++position);
-          buffer = a + b;
-          output +=
-          TABLE.charAt(buffer >> 10) +
-          TABLE.charAt(buffer >> 4 & 0x3F) +
-          TABLE.charAt(buffer << 2 & 0x3F) +
-          '=';
-
-        } else if (padding == 1) {
-          buffer = input.charCodeAt(position);
-          output +=
-          TABLE.charAt(buffer >> 2) +
-          TABLE.charAt(buffer << 4 & 0x3F) +
-          '==';
-
-        }
-
-        return output;
-      };
-
-      var base64 = {
-        'encode': encode,
-        'decode': decode,
-        'version': '0.1.0' };
-
-
-      // Some AMD build optimizers, like r.js, check for specific condition patterns
-      // like the following:
-      if (
-      false)
-      {} else if (freeExports && !freeExports.nodeType) {
-        if (freeModule) {// in Node.js or RingoJS v0.8.0+
-          freeModule.exports = base64;
-        } else {// in Narwhal or RingoJS v0.7.0-
-          for (var key in base64) {
-            base64.hasOwnProperty(key) && (freeExports[key] = base64[key]);
-          }
-        }
-      } else {// in Rhino or a web browser
-        root.base64 = base64;
-      }
-
-    })(commonjsGlobal);
-  });
-
-  function makeURI(strData, type) {
-    return 'data:' + type + ';base64,' + strData;
-  }
-
-  function fixType(type) {
-    type = type.toLowerCase().replace(/jpg/i, 'jpeg');
-    var r = type.match(/png|jpeg|bmp|gif/)[0];
-    return 'image/' + r;
-  }
-
-  function encodeData(data) {
-    var str = '';
-    if (typeof data === 'string') {
-      str = data;
-    } else {
-      for (var i = 0; i < data.length; i++) {
-        str += String.fromCharCode(data[i]);
-      }
-    }
-    return base64.encode(str);
-  }
-
-  /**
-     * 获取图像区域隐含的像素数据
-     * @param canvasId canvas标识
-     * @param x 将要被提取的图像数据矩形区域的左上角 x 坐标
-     * @param y 将要被提取的图像数据矩形区域的左上角 y 坐标
-     * @param width 将要被提取的图像数据矩形区域的宽度
-     * @param height 将要被提取的图像数据矩形区域的高度
-     * @param done 完成回调
-     */
-  function getImageData(canvasId, x, y, width, height, done) {
-    uni.canvasGetImageData({
-      canvasId: canvasId,
-      x: x,
-      y: y,
-      width: width,
-      height: height,
-      success: function success(res) {
-        done(res, null);
-      },
-      fail: function fail(res) {
-        done(null, res);
-      } });
-
-  }
-
-  /**
-     * 生成bmp格式图片
-     * 按照规则生成图片响应头和响应体
-     * @param oData 用来描述 canvas 区域隐含的像素数据 { data, width, height } = oData
-     * @returns {*} base64字符串
-     */
-  function genBitmapImage(oData) {
-    //
-    // BITMAPFILEHEADER: http://msdn.microsoft.com/en-us/library/windows/desktop/dd183374(v=vs.85).aspx
-    // BITMAPINFOHEADER: http://msdn.microsoft.com/en-us/library/dd183376.aspx
-    //
-    var biWidth = oData.width;
-    var biHeight = oData.height;
-    var biSizeImage = biWidth * biHeight * 3;
-    var bfSize = biSizeImage + 54; // total header size = 54 bytes
-
-    //
-    //  typedef struct tagBITMAPFILEHEADER {
-    //  	WORD bfType;
-    //  	DWORD bfSize;
-    //  	WORD bfReserved1;
-    //  	WORD bfReserved2;
-    //  	DWORD bfOffBits;
-    //  } BITMAPFILEHEADER;
-    //
-    var BITMAPFILEHEADER = [
-    // WORD bfType -- The file type signature; must be "BM"
-    0x42, 0x4D,
-    // DWORD bfSize -- The size, in bytes, of the bitmap file
-    bfSize & 0xff, bfSize >> 8 & 0xff, bfSize >> 16 & 0xff, bfSize >> 24 & 0xff,
-    // WORD bfReserved1 -- Reserved; must be zero
-    0, 0,
-    // WORD bfReserved2 -- Reserved; must be zero
-    0, 0,
-    // DWORD bfOffBits -- The offset, in bytes, from the beginning of the BITMAPFILEHEADER structure to the bitmap bits.
-    54, 0, 0, 0];
-
-
-    //
-    //  typedef struct tagBITMAPINFOHEADER {
-    //  	DWORD biSize;
-    //  	LONG  biWidth;
-    //  	LONG  biHeight;
-    //  	WORD  biPlanes;
-    //  	WORD  biBitCount;
-    //  	DWORD biCompression;
-    //  	DWORD biSizeImage;
-    //  	LONG  biXPelsPerMeter;
-    //  	LONG  biYPelsPerMeter;
-    //  	DWORD biClrUsed;
-    //  	DWORD biClrImportant;
-    //  } BITMAPINFOHEADER, *PBITMAPINFOHEADER;
-    //
-    var BITMAPINFOHEADER = [
-    // DWORD biSize -- The number of bytes required by the structure
-    40, 0, 0, 0,
-    // LONG biWidth -- The width of the bitmap, in pixels
-    biWidth & 0xff, biWidth >> 8 & 0xff, biWidth >> 16 & 0xff, biWidth >> 24 & 0xff,
-    // LONG biHeight -- The height of the bitmap, in pixels
-    biHeight & 0xff, biHeight >> 8 & 0xff, biHeight >> 16 & 0xff, biHeight >> 24 & 0xff,
-    // WORD biPlanes -- The number of planes for the target device. This value must be set to 1
-    1, 0,
-    // WORD biBitCount -- The number of bits-per-pixel, 24 bits-per-pixel -- the bitmap
-    // has a maximum of 2^24 colors (16777216, Truecolor)
-    24, 0,
-    // DWORD biCompression -- The type of compression, BI_RGB (code 0) -- uncompressed
-    0, 0, 0, 0,
-    // DWORD biSizeImage -- The size, in bytes, of the image. This may be set to zero for BI_RGB bitmaps
-    biSizeImage & 0xff, biSizeImage >> 8 & 0xff, biSizeImage >> 16 & 0xff, biSizeImage >> 24 & 0xff,
-    // LONG biXPelsPerMeter, unused
-    0, 0, 0, 0,
-    // LONG biYPelsPerMeter, unused
-    0, 0, 0, 0,
-    // DWORD biClrUsed, the number of color indexes of palette, unused
-    0, 0, 0, 0,
-    // DWORD biClrImportant, unused
-    0, 0, 0, 0];
-
-
-    var iPadding = (4 - biWidth * 3 % 4) % 4;
-
-    var aImgData = oData.data;
-
-    var strPixelData = '';
-    var biWidth4 = biWidth << 2;
-    var y = biHeight;
-    var fromCharCode = String.fromCharCode;
-
-    do {
-      var iOffsetY = biWidth4 * (y - 1);
-      var strPixelRow = '';
-      for (var x = 0; x < biWidth; x++) {
-        var iOffsetX = x << 2;
-        strPixelRow += fromCharCode(aImgData[iOffsetY + iOffsetX + 2]) +
-        fromCharCode(aImgData[iOffsetY + iOffsetX + 1]) +
-        fromCharCode(aImgData[iOffsetY + iOffsetX]);
-      }
-
-      for (var c = 0; c < iPadding; c++) {
-        strPixelRow += String.fromCharCode(0);
-      }
-
-      strPixelData += strPixelRow;
-    } while (--y);
-
-    var strEncoded = encodeData(BITMAPFILEHEADER.concat(BITMAPINFOHEADER)) + encodeData(strPixelData);
-
-    return strEncoded;
-  }
-
-  /**
-     * 转换为图片base64
-     * @param canvasId canvas标识
-     * @param x 将要被提取的图像数据矩形区域的左上角 x 坐标
-     * @param y 将要被提取的图像数据矩形区域的左上角 y 坐标
-     * @param width 将要被提取的图像数据矩形区域的宽度
-     * @param height 将要被提取的图像数据矩形区域的高度
-     * @param type 转换图片类型
-     * @param done 完成回调
-     */
-  function convertToImage(canvasId, x, y, width, height, type, done) {
-    if (done === void 0) done = function done() {};
-
-    if (type === undefined) {
-      type = 'png';
-    }
-    type = fixType(type);
-    if (/bmp/.test(type)) {
-      getImageData(canvasId, x, y, width, height, function (data, err) {
-        var strData = genBitmapImage(data);
-        tools_7(done) && done(makeURI(strData, 'image/' + type), err);
-      });
-    } else {
-      console.error('暂不支持生成\'' + type + '\'类型的base64图片');
-    }
-  }
-
-  var CanvasToBase64 = {
-    convertToImage: convertToImage,
-    // convertToPNG: function (width, height, done) {
-    //   return convertToImage(width, height, 'png', done)
-    // },
-    // convertToJPEG: function (width, height, done) {
-    //   return convertToImage(width, height, 'jpeg', done)
-    // },
-    // convertToGIF: function (width, height, done) {
-    //   return convertToImage(width, height, 'gif', done)
-    // },
-    convertToBMP: function convertToBMP(ref, done) {
-      if (ref === void 0) ref = {};
-      var canvasId = ref.canvasId;
-      var x = ref.x;
-      var y = ref.y;
-      var width = ref.width;
-      var height = ref.height;
-      if (done === void 0) done = function done() {};
-
-      return convertToImage(canvasId, x, y, width, height, 'bmp', done);
-    } };
-
-
-  function methods() {
-    var self = this;
-
-    var boundWidth = self.width; // 裁剪框默认宽度，即整个画布宽度
-    var boundHeight = self.height; // 裁剪框默认高度，即整个画布高度
-
-    var id = self.id;
-    var targetId = self.targetId;
-    var pixelRatio = self.pixelRatio;
-
-    var ref = self.cut;
-    var x = ref.x;
-    if (x === void 0) x = 0;
-    var y = ref.y;
-    if (y === void 0) y = 0;
-    var width = ref.width;
-    if (width === void 0) width = boundWidth;
-    var height = ref.height;
-    if (height === void 0) height = boundHeight;
-
-    self.updateCanvas = function (done) {
-      if (self.croperTarget) {
-        //  画布绘制图片
-        self.ctx.drawImage(
-        self.croperTarget,
-        self.imgLeft,
-        self.imgTop,
-        self.scaleWidth,
-        self.scaleHeight);
-
-      }
-      tools_7(self.onBeforeDraw) && self.onBeforeDraw(self.ctx, self);
-
-      self.setBoundStyle(self.boundStyle); //	设置边界样式
-
-      self.ctx.draw(false, done);
-      return self;
-    };
-
-    self.pushOrigin = self.pushOrign = function (src) {
-      self.src = src;
-
-      tools_7(self.onBeforeImageLoad) && self.onBeforeImageLoad(self.ctx, self);
-
-      return getImageInfo({
-        src: src }).
-
-      then(function (res) {
-        var innerAspectRadio = res.width / res.height;
-        var customAspectRadio = width / height;
-
-        self.croperTarget = res.path;
-
-        if (innerAspectRadio < customAspectRadio) {
-          self.rectX = x;
-          self.baseWidth = width;
-          self.baseHeight = width / innerAspectRadio;
-          self.rectY = y - Math.abs((height - self.baseHeight) / 2);
-        } else {
-          self.rectY = y;
-          self.baseWidth = height * innerAspectRadio;
-          self.baseHeight = height;
-          self.rectX = x - Math.abs((width - self.baseWidth) / 2);
-        }
-
-        self.imgLeft = self.rectX;
-        self.imgTop = self.rectY;
-        self.scaleWidth = self.baseWidth;
-        self.scaleHeight = self.baseHeight;
-
-        self.update();
-
-        return new Promise(function (resolve) {
-          self.updateCanvas(resolve);
-        });
-      }).
-      then(function () {
-        tools_7(self.onImageLoad) && self.onImageLoad(self.ctx, self);
-      });
-    };
-
-    self.removeImage = function () {
-      self.src = '';
-      self.croperTarget = '';
-      return draw(self.ctx);
-    };
-
-    self.getCropperBase64 = function (done) {
-      if (done === void 0) done = function done() {};
-
-      CanvasToBase64.convertToBMP({
-        canvasId: id,
-        x: x,
-        y: y,
-        width: width,
-        height: height },
-      done);
-    };
-
-    self.getCropperImage = function (opt, fn) {
-      var customOptions = opt;
-
-      var canvasOptions = {
-        canvasId: id,
-        x: x,
-        y: y,
-        width: width,
-        height: height };
-
-
-      var task = function task() {
-        return Promise.resolve();
-      };
-
-      if (
-      tools_10(customOptions) &&
-      customOptions.original)
-      {
-        // original mode
-        task = function task() {
-          self.targetCtx.drawImage(
-          self.croperTarget,
-          self.imgLeft * pixelRatio,
-          self.imgTop * pixelRatio,
-          self.scaleWidth * pixelRatio,
-          self.scaleHeight * pixelRatio);
-
-
-          canvasOptions = {
-            canvasId: targetId,
-            x: x * pixelRatio,
-            y: y * pixelRatio,
-            width: width * pixelRatio,
-            height: height * pixelRatio };
-
-
-          return draw(self.targetCtx);
-        };
-      }
-
-      return task().
-      then(function () {
-        if (tools_10(customOptions)) {
-          canvasOptions = Object.assign({}, canvasOptions, customOptions);
-        }
-
-        if (tools_7(customOptions)) {
-          fn = customOptions;
-        }
-
-        var arg = canvasOptions.componentContext ?
-        [canvasOptions, canvasOptions.componentContext] :
-        [canvasOptions];
-
-        return canvasToTempFilePath.apply(null, arg);
-      }).
-      then(function (res) {
-        var tempFilePath = res.tempFilePath;
-
-        return tools_7(fn) ?
-        fn.call(self, tempFilePath, null) :
-        tempFilePath;
-      }).
-      catch(function (err) {
-        if (tools_7(fn)) {
-          fn.call(self, null, err);
-        } else {
-          throw err;
-        }
-      });
-    };
-  }
-
-  /**
-     * 获取最新缩放值
-     * @param oldScale 上一次触摸结束后的缩放值
-     * @param oldDistance 上一次触摸结束后的双指距离
-     * @param zoom 缩放系数
-     * @param touch0 第一指touch对象
-     * @param touch1 第二指touch对象
-     * @returns {*}
-     */
-  var getNewScale = function getNewScale(oldScale, oldDistance, zoom, touch0, touch1) {
-    var xMove, yMove, newDistance;
-    // 计算二指最新距离
-    xMove = Math.round(touch1.x - touch0.x);
-    yMove = Math.round(touch1.y - touch0.y);
-    newDistance = Math.round(Math.sqrt(xMove * xMove + yMove * yMove));
-
-    return oldScale + 0.001 * zoom * (newDistance - oldDistance);
-  };
-
-  function update() {
-    var self = this;
-
-    if (!self.src) {
-      return;
-    }
-
-    self.__oneTouchStart = function (touch) {
-      self.touchX0 = Math.round(touch.x);
-      self.touchY0 = Math.round(touch.y);
-    };
-
-    self.__oneTouchMove = function (touch) {
-      var xMove, yMove;
-      // 计算单指移动的距离
-      if (self.touchended) {
-        return self.updateCanvas();
-      }
-      xMove = Math.round(touch.x - self.touchX0);
-      yMove = Math.round(touch.y - self.touchY0);
-
-      var imgLeft = Math.round(self.rectX + xMove);
-      var imgTop = Math.round(self.rectY + yMove);
-
-      self.outsideBound(imgLeft, imgTop);
-
-      self.updateCanvas();
-    };
-
-    self.__twoTouchStart = function (touch0, touch1) {
-      var xMove, yMove, oldDistance;
-
-      self.touchX1 = Math.round(self.rectX + self.scaleWidth / 2);
-      self.touchY1 = Math.round(self.rectY + self.scaleHeight / 2);
-
-      // 计算两指距离
-      xMove = Math.round(touch1.x - touch0.x);
-      yMove = Math.round(touch1.y - touch0.y);
-      oldDistance = Math.round(Math.sqrt(xMove * xMove + yMove * yMove));
-
-      self.oldDistance = oldDistance;
-    };
-
-    self.__twoTouchMove = function (touch0, touch1) {
-      var oldScale = self.oldScale;
-      var oldDistance = self.oldDistance;
-      var scale = self.scale;
-      var zoom = self.zoom;
-
-      self.newScale = getNewScale(oldScale, oldDistance, zoom, touch0, touch1);
-
-      //  设定缩放范围
-      self.newScale <= 1 && (self.newScale = 1);
-      self.newScale >= scale && (self.newScale = scale);
-
-      self.scaleWidth = Math.round(self.newScale * self.baseWidth);
-      self.scaleHeight = Math.round(self.newScale * self.baseHeight);
-      var imgLeft = Math.round(self.touchX1 - self.scaleWidth / 2);
-      var imgTop = Math.round(self.touchY1 - self.scaleHeight / 2);
-
-      self.outsideBound(imgLeft, imgTop);
-
-      self.updateCanvas();
-    };
-
-    self.__xtouchEnd = function () {
-      self.oldScale = self.newScale;
-      self.rectX = self.imgLeft;
-      self.rectY = self.imgTop;
-    };
-  }
-
-  var handle = {
-    //  图片手势初始监测
-    touchStart: function touchStart(e) {
-      var self = this;
-      var ref = e.touches;
-      var touch0 = ref[0];
-      var touch1 = ref[1];
-
-      if (!self.src) {
-        return;
-      }
-
-      setTouchState(self, true, null, null);
-
-      // 计算第一个触摸点的位置，并参照改点进行缩放
-      self.__oneTouchStart(touch0);
-
-      // 两指手势触发
-      if (e.touches.length >= 2) {
-        self.__twoTouchStart(touch0, touch1);
-      }
-    },
-
-    //  图片手势动态缩放
-    touchMove: function touchMove(e) {
-      var self = this;
-      var ref = e.touches;
-      var touch0 = ref[0];
-      var touch1 = ref[1];
-
-      if (!self.src) {
-        return;
-      }
-
-      setTouchState(self, null, true);
-
-      // 单指手势时触发
-      if (e.touches.length === 1) {
-        self.__oneTouchMove(touch0);
-      }
-      // 两指手势触发
-      if (e.touches.length >= 2) {
-        self.__twoTouchMove(touch0, touch1);
-      }
-    },
-
-    touchEnd: function touchEnd(e) {
-      var self = this;
-
-      if (!self.src) {
-        return;
-      }
-
-      setTouchState(self, false, false, true);
-      self.__xtouchEnd();
-    } };
-
-
-  function cut() {
-    var self = this;
-    var boundWidth = self.width; // 裁剪框默认宽度，即整个画布宽度
-    var boundHeight = self.height;
-    // 裁剪框默认高度，即整个画布高度
-    var ref = self.cut;
-    var x = ref.x;
-    if (x === void 0) x = 0;
-    var y = ref.y;
-    if (y === void 0) y = 0;
-    var width = ref.width;
-    if (width === void 0) width = boundWidth;
-    var height = ref.height;
-    if (height === void 0) height = boundHeight;
-
-    /**
-                                                  * 设置边界
-                                                  * @param imgLeft 图片左上角横坐标值
-                                                  * @param imgTop 图片左上角纵坐标值
-                                                  */
-    self.outsideBound = function (imgLeft, imgTop) {
-      self.imgLeft = imgLeft >= x ?
-      x :
-      self.scaleWidth + imgLeft - x <= width ?
-      x + width - self.scaleWidth :
-      imgLeft;
-
-      self.imgTop = imgTop >= y ?
-      y :
-      self.scaleHeight + imgTop - y <= height ?
-      y + height - self.scaleHeight :
-      imgTop;
-    };
-
-    /**
-        * 设置边界样式
-        * @param color	边界颜色
-        */
-    self.setBoundStyle = function (ref) {
-      if (ref === void 0) ref = {};
-      var color = ref.color;
-      if (color === void 0) color = '#04b00f';
-      var mask = ref.mask;
-      if (mask === void 0) mask = 'rgba(0, 0, 0, 0.3)';
-      var lineWidth = ref.lineWidth;
-      if (lineWidth === void 0) lineWidth = 1;
-
-      var half = lineWidth / 2;
-      var boundOption = [{
-        start: {
-          x: x - half,
-          y: y + 10 - half },
-
-        step1: {
-          x: x - half,
-          y: y - half },
-
-        step2: {
-          x: x + 10 - half,
-          y: y - half } },
-
-
-      {
-        start: {
-          x: x - half,
-          y: y + height - 10 + half },
-
-        step1: {
-          x: x - half,
-          y: y + height + half },
-
-        step2: {
-          x: x + 10 - half,
-          y: y + height + half } },
-
-
-      {
-        start: {
-          x: x + width - 10 + half,
-          y: y - half },
-
-        step1: {
-          x: x + width + half,
-          y: y - half },
-
-        step2: {
-          x: x + width + half,
-          y: y + 10 - half } },
-
-
-      {
-        start: {
-          x: x + width + half,
-          y: y + height - 10 + half },
-
-        step1: {
-          x: x + width + half,
-          y: y + height + half },
-
-        step2: {
-          x: x + width - 10 + half,
-          y: y + height + half } }];
-
-
-
-
-      // 绘制半透明层
-      self.ctx.beginPath();
-      self.ctx.setFillStyle(mask);
-      self.ctx.fillRect(0, 0, x, boundHeight);
-      self.ctx.fillRect(x, 0, width, y);
-      self.ctx.fillRect(x, y + height, width, boundHeight - y - height);
-      self.ctx.fillRect(x + width, 0, boundWidth - x - width, boundHeight);
-      self.ctx.fill();
-
-      boundOption.forEach(function (op) {
-        self.ctx.beginPath();
-        self.ctx.setStrokeStyle(color);
-        self.ctx.setLineWidth(lineWidth);
-        self.ctx.moveTo(op.start.x, op.start.y);
-        self.ctx.lineTo(op.step1.x, op.step1.y);
-        self.ctx.lineTo(op.step2.x, op.step2.y);
-        self.ctx.stroke();
-      });
-    };
-  }
-
-  var version = "1.3.9";
-
-  var WeCropper = function WeCropper(params) {
-    var self = this;
-    var _default = {};
-
-    validator(self, DEFAULT);
-
-    Object.keys(DEFAULT).forEach(function (key) {
-      _default[key] = DEFAULT[key].default;
-    });
-    Object.assign(self, _default, params);
-
-    self.prepare();
-    self.attachPage();
-    self.createCtx();
-    self.observer();
-    self.cutt();
-    self.methods();
-    self.init();
-    self.update();
-
-    return self;
-  };
-
-  WeCropper.prototype.init = function init() {
-    var self = this;
-    var src = self.src;
-
-    self.version = version;
-
-    typeof self.onReady === 'function' && self.onReady(self.ctx, self);
-
-    if (src) {
-      self.pushOrign(src);
-    } else {
-      self.updateCanvas();
-    }
-    setTouchState(self, false, false, false);
-
-    self.oldScale = 1;
-    self.newScale = 1;
-
-    return self;
-  };
-
-  Object.assign(WeCropper.prototype, handle);
-
-  WeCropper.prototype.prepare = prepare;
-  WeCropper.prototype.observer = observer;
-  WeCropper.prototype.methods = methods;
-  WeCropper.prototype.cutt = cut;
-  WeCropper.prototype.update = update;
-
-  return WeCropper;
-
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
-
-/***/ }),
-
-/***/ 75:
-/*!***********************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/pages/example/js.config.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  groupName: '网络',
-  groupName_en: 'Network',
-  list: [
-  {
-    path: 'http',
-    icon: 'http',
-    title: 'Http 请求',
-    title_en: 'Http' }] },
-
-
-
-{
-  groupName: '全局变量',
-  groupName_en: 'Global variable',
-  list: [
-  {
-    path: 'globalVariable',
-    icon: 'globalVariable',
-    title: 'GlobalVariable 全局变量',
-    title_en: 'GlobalVariable' }] },
-
-
-
-{
-  groupName: '工具库',
-  groupName_en: 'Tool library',
-  list: [
-  {
-    path: 'debounce',
-    icon: 'debounce',
-    title: 'Throttle | Debounce 节流防抖',
-    title_en: 'Throttle | Debounce' },
-
-  {
-    path: 'deepMerge',
-    icon: 'deepMerge',
-    title: 'DeepMerge 对象深度合并',
-    title_en: 'DeepMerge' },
-  {
-    path: 'deepClone',
-    icon: 'deepClone',
-    title: 'DeepClone 对象深度克隆',
-    title_en: 'DeepClone' },
-
-  {
-    path: 'timeFormat',
-    icon: 'timeFormat',
-    title: 'TimeFormat 时间格式化',
-    title_en: 'TimeFormat' },
-  {
-    path: 'timeFrom',
-    icon: 'timeFrom',
-    title: 'TimeFrom 多久之前',
-    title_en: 'TimeFrom' },
-  {
-    path: 'guid',
-    icon: 'guid',
-    title: 'Guid 全局唯一id',
-    title_en: 'Guid' },
-  {
-    path: 'route',
-    icon: 'route',
-    title: 'Route 路由跳转',
-    title_en: 'Route' },
-  {
-    path: 'randomArray',
-    icon: 'randomArray',
-    title: 'RandomArray 数组乱序',
-    title_en: 'RandomArray' },
-  {
-    path: 'colorSwitch',
-    icon: 'colorSwitch',
-    title: 'ColorSwitch 颜色转换',
-    title_en: 'ColorSwitch' },
-  {
-    path: 'color',
-    icon: 'color',
-    title: 'Color 颜色值',
-    title_en: 'Color' },
-  {
-    path: 'queryParams',
-    icon: 'queryParams',
-    title: 'QueryParams 对象转URL参数',
-    title_en: 'QueryParams' },
-  {
-    path: 'test',
-    icon: 'test',
-    title: 'Test 规则校验',
-    title_en: 'Test' },
-  {
-    path: 'md5',
-    icon: 'md5',
-    title: 'Md5 md5加密',
-    title_en: 'Md5' },
-  {
-    path: 'random',
-    icon: 'random',
-    title: 'Random 随机数值',
-    title_en: 'Random' },
-  {
-    path: 'trim',
-    icon: 'trim',
-    title: 'Trim 去除空格',
-    title_en: 'Trim' },
-  {
-    path: 'getRect',
-    icon: 'getRect',
-    title: 'GetRect 节点信息',
-    title_en: 'GetRect' },
-  {
-    path: 'mpShare',
-    icon: 'mpShare',
-    title: 'MpShare 小程序分享',
-    title_en: 'MpShare' }] }];exports.default = _default;
-
-/***/ }),
-
-/***/ 86:
-/*!*****************************************************************************************!*\
-  !*** C:/Users/cssly/Documents/Git/KYLMS-Driver-uniapp/pages/example/template.config.js ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  groupName: '部件',
-  groupName_en: 'Parts',
-  list: [
-  {
-    path: 'coupon',
-    icon: 'coupon',
-    title: 'Coupon 优惠券',
-    title_en: 'Coupon' }] },
-
-
-
-{
-  groupName: '页面',
-  groupName_en: 'Page',
-  list: [
-  {
-    path: '/pages/template/wxCenter/index',
-    icon: 'wxCenter',
-    title: 'WxCenter 仿微信个人中心',
-    title_en: 'WxCenter' },
-
-  // {
-  // 	path: '/pages/template/douyin/index',
-  // 	icon: 'douyin',
-  // 	title: 'Douyin 仿抖音',
-  // },
-  {
-    path: '/pages/template/keyboardPay/index',
-    icon: 'keyboardPay',
-    title: 'KeyboardPay 自定义键盘支付模板',
-    title_en: 'KeyboardPay' },
-
-  {
-    path: '/pages/template/mallMenu/index1',
-    icon: 'mall_menu_1',
-    title: 'MallMenu 垂直分类(左右独立)',
-    title_en: 'MallMenu 1' },
-  {
-    path: '/pages/template/mallMenu/index2',
-    icon: 'mall_menu_2',
-    title: 'MallMenu 垂直分类(左右联动)',
-    title_en: 'MallMenu 2' },
-  {
-    path: 'submitBar',
-    icon: 'submitBar',
-    title: 'SubmitBar 提交订单栏',
-    title_en: 'SubmitBar' },
-  {
-    path: 'comment',
-    icon: 'comment',
-    title: 'Comment 评论列表',
-    title_en: 'Comment' },
-  {
-    path: 'order',
-    icon: 'order',
-    title: 'Order 订单列表',
-    title_en: 'Order' },
-  {
-    path: 'login',
-    icon: 'login',
-    title: 'Login 登录界面',
-    title_en: 'Login' },
-  {
-    path: 'address',
-    icon: 'address',
-    title: 'Address 收货地址',
-    title_en: 'Address' },
-  {
-    path: 'citySelect',
-    icon: 'citySelect',
-    title: 'CitySelect 城市选择',
-    title_en: 'CitySelect' }] }];exports.default = _default;
 
 /***/ })
 

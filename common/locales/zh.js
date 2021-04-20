@@ -1,5 +1,8 @@
 export default {
 	// 可以以页面为单位来写，比如首页的内容，写在index字段，个人中心写在center，共同部分写在common部分
+	workbench: {
+		desc: '检查你的工作进度'
+	},
 	components: {
 		desc: '众多组件覆盖开发过程的各个需求，组件功能丰富，多端兼容。让你快速集成，开箱即用'
 	},
@@ -10,6 +13,8 @@ export default {
 		desc: '收集众多的常用页面和布局，减少开发者的重复工作，让你专注逻辑，事半功倍'
 	},
 	nav: {
+		workbench:'工作台',
+		userCenter:'个人中心',
 		components: '组件',
 		js: '工具',
 		template: '模板'

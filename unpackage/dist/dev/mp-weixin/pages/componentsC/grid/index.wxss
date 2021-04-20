@@ -33,8 +33,7 @@
   background-color: #909399;
   height: 6px;
   width: 6px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   margin: 0 3px;
 }
 .indicator-dots-active.data-v-a5a54b38 {

@@ -22,8 +22,7 @@
   -webkit-flex: 0 0 120rpx;
           flex: 0 0 120rpx;
   height: 120rpx;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   margin-left: 12rpx;
 }
 

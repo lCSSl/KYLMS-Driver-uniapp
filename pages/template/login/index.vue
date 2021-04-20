@@ -5,7 +5,7 @@
 			<view class="title">欢迎登录美团</view>
 			<input class="u-border-bottom" type="number" v-model="tel" placeholder="请输入手机号" />
 			<view class="tips">未注册的手机号验证后自动创建美团账号</view>
-			<button @tap="submit" :style="[inputStyle]" class="getCaptcha">获取短信验证码</button>
+      <button @tap="submit" :style="[inputStyle]" class="getCaptcha">获取短信验证码</button>
 			<view class="alternative">
 				<view class="password">密码登录</view>
 				<view class="issue">遇到问题</view>
@@ -89,7 +89,7 @@ export default {
 			border: none;
 			font-size: 30rpx;
 			padding: 12rpx 0;
-			
+
 			&::after {
 				border: none;
 			}
@@ -106,7 +106,7 @@ export default {
 			display: flex;
 			padding: 350rpx 150rpx 150rpx 150rpx;
 			justify-content:space-between;
-			
+
 			.item {
 				display: flex;
 				flex-direction: column;
@@ -115,12 +115,12 @@ export default {
 				font-size: 28rpx;
 			}
 		}
-		
+
 		.hint {
 			padding: 20rpx 40rpx;
 			font-size: 20rpx;
 			color: $u-tips-color;
-			
+
 			.link {
 				color: $u-type-warning;
 			}

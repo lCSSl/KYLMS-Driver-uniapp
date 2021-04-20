@@ -51,8 +51,7 @@ page.data-v-b4d78916 {
 .meituan .content .right .immediate-use.data-v-b4d78916 {
   padding: 0 20rpx;
   height: 50rpx;
-  -webkit-border-radius: 25rpx;
-          border-radius: 25rpx;
+  border-radius: 25rpx;
   line-height: 50rpx;
   background-color: #ff9900 !important;
   color: #ffffff !important;
@@ -83,14 +82,12 @@ page.data-v-b4d78916 {
   background-color: #f2f2f2;
 }
 .meituan .tips .circle-right.data-v-b4d78916 {
-  -webkit-border-radius: 40rpx 0 0 40rpx;
-          border-radius: 40rpx 0 0 40rpx;
+  border-radius: 40rpx 0 0 40rpx;
   right: 0;
   top: -18rpx;
 }
 .meituan .tips .circle-left.data-v-b4d78916 {
-  -webkit-border-radius: 0 40rpx 40rpx 0;
-          border-radius: 0 40rpx 40rpx 0;
+  border-radius: 0 40rpx 40rpx 0;
   left: 0;
   top: -18rpx;
 }
@@ -151,8 +148,7 @@ page.data-v-b4d78916 {
 .jingdong .right .top .title .tag.data-v-b4d78916 {
   padding: 4rpx 20rpx;
   background-color: #499ac9;
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
   color: #ffffff;
   font-weight: bold;
   font-size: 24rpx;
@@ -181,8 +177,7 @@ page.data-v-b4d78916 {
   height: auto;
   padding: 0 20rpx;
   font-size: 24rpx;
-  -webkit-border-radius: 40rpx;
-          border-radius: 40rpx;
+  border-radius: 40rpx;
   line-height: 40rpx;
   color: #758ea5;
   border: 2rpx solid #758ea5;
@@ -215,11 +210,9 @@ page.data-v-b4d78916 {
 .jingdong .right .tips .particulars.data-v-b4d78916 {
   width: 30rpx;
   height: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-top: 8rpx;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #c8c9cc;
   text-align: center;
 }
@@ -228,8 +221,7 @@ page.data-v-b4d78916 {
   width: 700rpx;
   background-color: white;
   padding: 30rpx 20rpx 20rpx;
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
 }
 .taobao .title.data-v-b4d78916 {
   display: -webkit-box;
@@ -258,8 +250,7 @@ page.data-v-b4d78916 {
 .taobao .title .buddha.data-v-b4d78916 {
   width: 70rpx;
   height: 70rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   margin-right: 10rpx;
 }
 .taobao .title .entrance.data-v-b4d78916 {
@@ -268,8 +259,7 @@ page.data-v-b4d78916 {
   line-height: 48rpx;
   padding: 0 30rpx;
   background: none;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
 }
 .taobao .ticket.data-v-b4d78916 {
   display: -webkit-box;
@@ -280,8 +270,7 @@ page.data-v-b4d78916 {
   width: 70%;
   padding: 30rpx 20rpx;
   background-color: #fff5f4;
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
   border-right: dashed 2rpx #e0d7d3;
   display: -webkit-box;
   display: -webkit-flex;
@@ -289,8 +278,7 @@ page.data-v-b4d78916 {
 }
 .taobao .ticket .left .picture.data-v-b4d78916 {
   width: 172rpx;
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
 }
 .taobao .ticket .left .introduce.data-v-b4d78916 {
   margin-left: 10rpx;
@@ -317,8 +305,7 @@ page.data-v-b4d78916 {
   width: 30%;
   padding: 40rpx 20rpx;
   background-color: #fff5f4;
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -330,8 +317,7 @@ page.data-v-b4d78916 {
   height: auto;
   padding: 0 20rpx;
   font-size: 24rpx;
-  -webkit-border-radius: 40rpx;
-          border-radius: 40rpx;
+  border-radius: 40rpx;
   color: #ffffff !important;
   background-color: #ff9900 !important;
   line-height: 40rpx;

@@ -157,8 +157,7 @@ page {
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
 .demo-warter.data-v-8fb022ee {
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+  border-radius: 8px;
   margin: 5px;
   background-color: #ffffff;
   padding: 8px;
@@ -171,8 +170,7 @@ page {
 }
 .demo-image.data-v-8fb022ee {
   width: 100%;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 .demo-title.data-v-8fb022ee {
   font-size: 30rpx;
@@ -196,8 +194,7 @@ page {
   -webkit-align-items: center;
           align-items: center;
   padding: 4rpx 14rpx;
-  -webkit-border-radius: 50rpx;
-          border-radius: 50rpx;
+  border-radius: 50rpx;
   font-size: 20rpx;
   line-height: 1;
 }
@@ -205,8 +202,7 @@ page {
   border: 1px solid #2979ff;
   color: #2979ff;
   margin-left: 10px;
-  -webkit-border-radius: 50rpx;
-          border-radius: 50rpx;
+  border-radius: 50rpx;
   line-height: 1;
   padding: 4rpx 14rpx;
   display: -webkit-box;

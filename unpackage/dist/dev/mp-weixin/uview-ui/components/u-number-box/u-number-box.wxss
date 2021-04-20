@@ -53,12 +53,10 @@
           align-items: center;
 }
 .u-icon-plus.data-v-a54b45c0 {
-  -webkit-border-radius: 0 8rpx 8rpx 0;
-          border-radius: 0 8rpx 8rpx 0;
+  border-radius: 0 8rpx 8rpx 0;
 }
 .u-icon-minus.data-v-a54b45c0 {
-  -webkit-border-radius: 8rpx 0 0 8rpx;
-          border-radius: 8rpx 0 0 8rpx;
+  border-radius: 8rpx 0 0 8rpx;
 }
 .u-icon-disabled.data-v-a54b45c0 {
   color: #c8c9cc !important;

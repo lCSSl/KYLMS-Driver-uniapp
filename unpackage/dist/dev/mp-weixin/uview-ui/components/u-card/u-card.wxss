@@ -9,8 +9,7 @@
   overflow: hidden;
   font-size: 28rpx;
   background-color: #ffffff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .u-card-full.data-v-d7b36b00 {
   margin-left: 0 !important;
@@ -18,8 +17,7 @@
   width: 100%;
 }
 .u-card--border.data-v-d7b36b00:after {
-  -webkit-border-radius: 16rpx;
-          border-radius: 16rpx;
+  border-radius: 16rpx;
 }
 .u-card__head--left.data-v-d7b36b00 {
   color: #303133;

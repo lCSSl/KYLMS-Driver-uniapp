@@ -8,8 +8,7 @@
   padding: 4rpx 6rpx;
   background-color: #fa3534;
   color: #fff;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   font-size: 22rpx;
   line-height: 1;
 }

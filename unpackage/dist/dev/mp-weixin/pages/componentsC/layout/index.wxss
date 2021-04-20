@@ -6,8 +6,7 @@
  */
 .demo-layout.data-v-0f746888 {
   height: 70rpx;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   margin: 20rpx 0;
 }
 .bg-purple.data-v-0f746888 {

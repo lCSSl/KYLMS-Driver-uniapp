@@ -43,8 +43,7 @@
 .navigation .right .btn.data-v-26337e02 {
   line-height: 66rpx;
   padding: 0 30rpx;
-  -webkit-border-radius: 36rpx;
-          border-radius: 36rpx;
+  border-radius: 36rpx;
   color: #ffffff;
 }
 .navigation .right .cart.data-v-26337e02 {

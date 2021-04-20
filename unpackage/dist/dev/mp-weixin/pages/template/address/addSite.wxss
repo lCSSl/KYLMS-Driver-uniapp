@@ -98,8 +98,7 @@
   padding: 16rpx 8rpx;
   border: solid 2rpx #e4e7ed;
   text-align: center;
-  -webkit-border-radius: 50rpx;
-          border-radius: 50rpx;
+  border-radius: 50rpx;
   margin: 0 10rpx 20rpx;
   display: -webkit-box;
   display: -webkit-flex;

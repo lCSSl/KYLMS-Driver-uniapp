@@ -36,8 +36,7 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 42rpx;
   height: 42rpx;
   color: transparent;
@@ -50,12 +49,10 @@
           transition-duration: 0.2s;
 }
 .u-checkbox__icon-wrap--circle.data-v-54acf820 {
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  border-radius: 100%;
 }
 .u-checkbox__icon-wrap--square.data-v-54acf820 {
-  -webkit-border-radius: 6rpx;
-          border-radius: 6rpx;
+  border-radius: 6rpx;
 }
 .u-checkbox__icon-wrap--checked.data-v-54acf820 {
   color: #fff;

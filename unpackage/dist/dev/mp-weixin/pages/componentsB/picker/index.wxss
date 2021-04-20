@@ -6,8 +6,7 @@
  */
 .input.data-v-4ff3b266 {
   border: 1px solid #c0c4cc;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   margin-bottom: 20px;
   height: 30px;
   font-size: 26rpx;

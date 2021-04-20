@@ -18,8 +18,7 @@
   -webkit-align-items: center;
           align-items: center;
   padding: 16rpx 30rpx;
-  -webkit-border-radius: 8rpx;
-          border-radius: 8rpx;
+  border-radius: 8rpx;
   position: relative;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;

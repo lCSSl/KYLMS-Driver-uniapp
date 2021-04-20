@@ -14,7 +14,6 @@
 .u-avatar-demo.data-v-53e524ea {
   width: 150rpx;
   height: 150rpx;
-  -webkit-border-radius: 100rpx;
-          border-radius: 100rpx;
+  border-radius: 100rpx;
 }
 
