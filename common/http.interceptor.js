@@ -66,7 +66,6 @@ const install = ( Vue, vm ) => {
 			return res.data
 		} else {
 			if (code === 401) {
-
 				uni.navigateTo({
 					url: '/pages/auth/login?navigateType=2'
 				})
@@ -78,7 +77,6 @@ const install = ( Vue, vm ) => {
 					position: 'top',
 				});
 			}else if (code === 403) {
-				console.log(4030303030303)
 				uni.navigateTo({
 					url: '/pages/auth/login?navigateType=3'
 				})

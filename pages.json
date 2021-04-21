@@ -86,7 +86,14 @@
         {
           "path": "checkMission/index",
           "style": {
-            "navigationBarTitleText": "检查任务"
+            "navigationBarTitleText": "检查任务",
+            "enablePullDownRefresh":true
+          }
+        },
+        {
+          "path": "stowageRouteView/index",
+          "style": {
+            "navigationBarTitleText": "查看路线"
           }
         }
       ]

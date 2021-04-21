@@ -291,7 +291,8 @@ export default {
       loadStatus: ['loadmore','loadmore','loadmore','loadmore'],
     };
   },
-  onLoad() {
+  onLoad(options) {
+    console.log(options)
     this.getData();
     this.getDictDataMethods();
     // this.getOrderList(0);
@@ -327,7 +328,7 @@ export default {
         this.missionList[2].length=0;
         this.dataList.forEach((item,index)=>{
           let stowageStatus = item.stowageStatus
-          if (stowageStatus>=0&&stowageStatus<=2){
+          if (stowageStatus==2){
             this.missionList[0].push(item)
           }else if ( stowageStatus==3){
             this.missionList[1].push(item)
@@ -382,9 +383,6 @@ export default {
     },
     jumpRoutePage(stowageId){
       console.log(stowageId)
-      this.$u.route({
-        url: '/pages/components/stowageRouteView/index?stowageId='+stowageId
-      })
     },
     transition({ detail: { dx } }) {
       this.$refs.tabs.setDx(dx);

@@ -18,7 +18,6 @@
     </view>
     -->
     <view class="u-m-t-20">
-      <u-toast :type="type" ref="uToast"></u-toast>
       <u-cell-group v-for="(group, groupIndex) in list" :key="groupIndex"
                     :title="getGroupTitle(group)" title-bg-color="rgb(243, 244, 246)">
         <u-cell-item v-for="(item, index) in group.list" :key="index" :icon="item.icon"

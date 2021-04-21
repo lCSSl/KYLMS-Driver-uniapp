@@ -28,6 +28,7 @@ export default {
   props: {
     desc: String,
     title: String,
+    timerStart: false
   },
   computed: {
     lang() {
@@ -59,15 +60,46 @@ export default {
   mounted() {
     const user = this.vuex_user
     this.$u.get( '/system/user/getDriverInfo' ).then( res => {
-      this.$u.vuex( 'vuex_user', res );
+      this.$u.vuex( 'vuex_user', res )
       if ( user && user.userId ) {
 
       } else {
-        uni.redirectTo({url:'/pages/workbench/index'})
+        uni.redirectTo( { url: '/pages/workbench/index' } )
       }
     } )
+    //获取位置授权
+    //#ifdef MP
+    uni.authorize( {
+      scope: 'scope.userLocation',
+      success( res ) {
+        //获取位置后台定位授权
+        uni.authorize( {
+          scope: 'scope.userLocationBackground',
+          success() {
 
-  }
+          },
+          fail( res ) {
+
+          }
+        } )
+      },
+      fail( res ) {
+        uni.showModal( {
+          content: '为了您能正常使用请务必授权位置信息为“使用小程序期间和离开小程序后”',
+          confirmText: '确认',
+          showCancel: false,
+          success( res ) {
+            if ( res.confirm ) {
+              uni.openSetting( {
+                success( res ) {}
+              } )
+            }
+          }
+        } )
+      }
+    } )
+    // #endif
+  },
 }
 </script>
 
