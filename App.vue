@@ -3,24 +3,23 @@ export default {
   // 此处globalData为了演示其作用，不是uView框架的一部分
   globalData: {
     username: '白居易',
-    intervalId: null,
-    location: false,
   },
   onLaunch() {
+    uni.getLocation( {
+      success( res ) {
+      }
+    } )
     uni.$on( 'driverMission', ()=>{
-      console.log( 'app-show' )
-      console.log( 'getLocation?', this.vuex_get_location )
-      console.log( 'vuex_interval_id?', this.vuex_interval_id )
-      const vuexMission = this.vuex_mission
-      if ( vuexMission) {
-        const intervalId = setInterval( () => {
-          this.$u.vuex( 'vuex_interval_id', intervalId )
-          const getLocation = this.vuex_get_location
-          const vuexIntervalId = this.vuex_interval_id
+      if ( this.vuex_mission) {
+        if ( this.vuex_interval_id ){
+          return;
+        }
+        const currentIntervalId = setInterval( () => {
+          this.$u.vuex( 'vuex_interval_id', currentIntervalId )
+          const mission = this.vuex_mission
             uni.getLocation( {
               success( res ) {
-                console.log( 'vuexMission', vuexMission )
-                console.log( vuexIntervalId, getLocation, res )
+                console.log( this.vuex_interval_id,mission, res )
               }
             } )
         }, 3000 );
@@ -38,11 +37,12 @@ export default {
      */
   },
   onShow() {
+    console.log( 'app-show' )
     uni.$emit('driverMission');
-    console.log('app--->$emit')
   },
   onHide() {
     console.log( 'app-hide' )
+    uni.$emit('driverMission');
     // const vuexIntervalId = this.vuex_interval_id
     // this.$u.vuex( 'vuex_get_location', false )
     // this.$u.vuex( 'vuex_interval_id', null )

@@ -28,7 +28,7 @@
       <u-cell-group v-for="(group, groupIndex) in list" :key="groupIndex"
                     :title="getGroupTitle(group)" title-bg-color="rgb(243, 244, 246)">
         <u-cell-item v-for="(item, index) in group.list" :key="index" :icon="item.icon"
-                     :title="getFieldTitle(item)" :titleStyle="{fontWeight: 500}" @click="openPage(item.path)">
+                     :title="getFieldTitle(item)" :titleStyle="{fontWeight: 500}" @click="openPage(item)">
         </u-cell-item>
       </u-cell-group>
     </view>
@@ -50,10 +50,32 @@ export default {
 
   },
   methods: {
-    openPage( path ) {
-      this.$u.route( {
-        url: path
-      } )
+    openPage( item ) {
+      if ( item.path ){
+        this.$u.route( {
+          url: item.path
+        } )
+      }else {
+        switch(+item.type){
+          case 0:
+            this.$u.api.logout().then(res=>{
+              uni.navigateTo({
+                url: '/pages/auth/login?navigateType=4'
+              })
+            }).catch(res=>{
+              uni.navigateTo({
+                url: '/pages/auth/login?navigateType=4'
+              })
+            }).finally(()=>{
+              this.$u.vuex( 'vuex_access_token', '' )
+              this.$u.vuex( 'vuex_expires_in', '' )
+              this.$u.vuex( 'vuex_user', {} )
+            })
+            break;
+          case 1:break;
+          default:;
+        }
+      }
     },
     getGroupTitle( item ) {
       return this.$i18n.locale == 'zh' ? item.groupName : item.groupName_en

@@ -63,7 +63,7 @@ const install = ( Vue, vm ) => {
 		const msg = errorCode[code] || res.msg || errorCode['default']
 		if ( code == 200 ) {
 			// 如果把originalData设置为了true，这里return回什么，this.$u.post的then回调中就会得到什么
-			return res.data
+			return res.data?res.data:res.rows
 		} else {
 			if (code === 401) {
 				uni.navigateTo({

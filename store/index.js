@@ -13,7 +13,7 @@ try {
 }
 
 // 需要永久存储，且下次APP启动需要取出的，在state中的变量名
-let saveStateKeys = [ 'vuex_user', 'vuex_access_token', 'vuex_expires_in','vuex_get_location_cycle']
+let saveStateKeys = [ 'vuex_user', 'vuex_access_token', 'vuex_expires_in','vuex_get_location_cycle','vuex_first_open_app']
 
 // 保存变量到本地存储中
 const saveLifeData = function ( key, value ) {
@@ -42,6 +42,7 @@ const store = new Vuex.Store( {
 		vuex_get_location_cycle: 900000,
 		vuex_interval_id: null,
 		vuex_mission:null,
+		vuex_first_open_app:lifeData.vuex_first_open_app ? lifeData.vuex_first_open_app : true,
 		// 自定义tabbar数据
 		vuex_tabbar: [
 			{

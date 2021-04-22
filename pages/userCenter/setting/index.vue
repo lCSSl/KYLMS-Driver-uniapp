@@ -31,7 +31,6 @@
 </template>
 <script>
 import list from './setting.config'
-
 export default {
   data() {
     return {
@@ -44,7 +43,15 @@ export default {
   },
   methods: {
     openPage( path ) {
-      this.chooseAvatar()
+      switch ( path ){
+        case 0:
+          this.chooseAvatar()
+          break
+        case 1:
+
+          break;
+        default:;
+      }
     },
     chooseAvatar() {
       // 此为uView的跳转方法，详见"文档-JS"部分，也可以用uni的uni.navigateTo

@@ -63,10 +63,10 @@
             "sdkConfigs" : {
                 "ad" : {},
                 "geolocation" : {
-                    "baidu" : {
+                    "amap" : {
                         "__platform__" : [ "ios", "android" ],
-                        "appkey_ios" : "rriqS1GyeIQ872Kmz24vOqpNg5jU6Qox",
-                        "appkey_android" : "fHTedTVOcBReqKjNgwmur8OHfb2GlR5l"
+                        "appkey_ios" : "076f80f35141f2c53f4e6859b560e449",
+                        "appkey_android" : "a818850cdf1a5abf12bb1b87491c457d"
                     }
                 },
                 "maps" : {}

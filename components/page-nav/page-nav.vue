@@ -57,16 +57,10 @@ export default {
       } )
     }
   },
+  onShow(){
+  },
   mounted() {
     const user = this.vuex_user
-    this.$u.get( '/system/user/getDriverInfo' ).then( res => {
-      this.$u.vuex( 'vuex_user', res )
-      if ( user && user.userId ) {
-
-      } else {
-        uni.redirectTo( { url: '/pages/workbench/index' } )
-      }
-    } )
     //获取位置授权
     //#ifdef MP
     uni.authorize( {
@@ -99,6 +93,15 @@ export default {
       }
     } )
     // #endif
+    this.$u.api.getDriverInfo().then(res=>{
+      this.$u.vuex( 'vuex_user', res )
+      if ( user && user.userId ) {
+
+      } else {
+        uni.redirectTo( { url: '/pages/workbench/index' } )
+      }
+    })
+
   },
 }
 </script>

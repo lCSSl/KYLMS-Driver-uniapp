@@ -8,6 +8,13 @@ export default [
 				icon: 'setting',
 				title: '设置',
 				title_en: 'Setting',
+			},
+			{
+				path: null,
+				type:0,
+				icon: 'close',
+				title: '退出登录',
+				title_en: 'Logout',
 			}
 		]
 	},
