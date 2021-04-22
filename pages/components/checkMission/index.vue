@@ -305,10 +305,9 @@ export default {
       this.swiperCurrent = index
     },
     jumpRoutePage( stowageId ) {
-      console.log( stowageId )
-      this.$u.route( {
-        url: '/pages/components/stowageRouteView/index?stowageId=' + stowageId
-      } )
+      uni.navigateTo({
+        url:'/pages/components/stowageRouteView/index?stowageId='+stowageId,
+      })
     },
     confirmMission( stowageId ) {
       console.log( 'confirmMission', stowageId )
