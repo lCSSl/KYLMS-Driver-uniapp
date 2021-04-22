@@ -52,10 +52,8 @@
 
 <script>
 import { selectDictLabel } from '../../../common/utils'
-import UButton from '../../../uview-ui/components/u-button/u-button'
 
 export default {
-  components: { UButton },
   data() {
     return {
       stowageId:null,
@@ -156,21 +154,22 @@ export default {
         }).then(res=>{
             that.init();
         })
+      }else {
+        uni.getLocation( {
+          success( res ) {
+            that.$u.api.arrivalSite({
+              routeId,
+              lng:res.longitude,
+              lat:res.latitude
+            }).then(res=>{
+              console.log(res)
+            }).catch(res=>{
+              that.markPosition = !that.markPosition
+              that.$u.toast('已开启虚拟定位以通过验证',3333);
+            })
+          }
+        } )
       }
-      uni.getLocation( {
-        success( res ) {
-          that.$u.api.arrivalSite({
-            routeId,
-            lng:res.longitude,
-            lat:res.latitude
-          }).then(res=>{
-            console.log(res)
-          }).catch(res=>{
-            that.markPosition = !that.markPosition
-            that.$u.toast('已开启虚拟定位以通过验证',3333);
-          })
-        }
-      } )
     },
     change( index ) {
       this.swiperCurrent = index

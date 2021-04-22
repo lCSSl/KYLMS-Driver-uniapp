@@ -2,7 +2,7 @@
 // 同时，我们也可以在此使用getApp().globalData，如果你把token放在getApp().globalData的话，也是可以使用的
 import errorCode from './errorCode'
 
-let baseUrl = 'http://localhost:8080'
+let baseUrl = 'http://tunnel.kaiyu.work:55938'
 const whileList = [ '/system/sms/code', '/auth/login', '/auth/user/mobile' ]
 
 if ( process.env.NODE_ENV === 'production' ) {
