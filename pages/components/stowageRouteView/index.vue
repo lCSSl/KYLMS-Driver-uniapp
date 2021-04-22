@@ -20,7 +20,10 @@
                     <view>
                       <view class="u-order-title">
                         <view v-if="item.routeSort===0||item.routeSort===127">
-                          <u-tag size="mini" :text="item.routeSort===0?'起点':item.routeSort===127?'终点':''"></u-tag>&nbsp;{{item.stowageWarehouseName}}
+                          <u-tag size="mini" :text="item.routeSort===0?'起点':item.routeSort===127?'终点':''"></u-tag>
+                        </view>
+                        <view>
+                          &nbsp;{{item.stowageWarehouseName}}
                         </view>
                       </view>
                       <view class="u-order-desc">{{item.remark?item.remark:''}}</view>
