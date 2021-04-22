@@ -16,7 +16,7 @@
                   </view>
                 </template>
                 <template v-slot:content>
-                  <view>
+                  <view @tap.stop="stop">
                     <u-row>
                       <u-col :span="9">
                         <view class="u-order-title">
@@ -31,7 +31,7 @@
                         <view class="u-order-time">{{item.updateTime?item.updateTime:''}}</view>
                       </u-col>
                       <u-col :span="3">
-                        <u-button v-if="findFirst(item.routeId)" @click="arrival(item.routeId)" size="mini" type="success">到站</u-button>
+                          <u-button v-if="findFirst(item.routeId)" @click="arrival(item.routeId)" size="mini" type="success">到站</u-button>
                       </u-col>
                     </u-row>
                   </view>
