@@ -1,5 +1,6 @@
 <template>
   <view>
+    <u-top-tips ref="uTips"></u-top-tips>
     <view class="wrap">
       <view class="u-tabs-box">
         <u-tabs-swiper ref="tabs" :current="current" :is-scroll="false" :list="tabList" activeColor="#016B09"
@@ -8,6 +9,36 @@
       <swiper :current="swiperCurrent" class="swiper-box" @animationfinish="animationfinish" @transition="transition">
         <swiper-item class="swiper-item time-line-item">
           <u-time-line>
+            <!--
+            <uni-list>
+              <uni-list-item class="time-line-item" v-for="(item,index) in rows">
+                <u-time-line-item :key="index" nodeTop="0">
+                  <template v-slot:node>
+                    <view :class="'u-node '+[item.routeStatus=='-1'?'error':item.routeStatus=='1'?'success':'']">
+                      <u-icon :name="item.routeStatus=='-1'?'error':item.routeStatus=='1'?'checkbox-mark':'rewind-right-fill'" color="#fff" :size="24"></u-icon>
+                    </view>
+                  </template>
+                  <template v-slot:content>
+                    <view @tap.stop="stop">
+                      <u-row>
+                        <u-col :span="9">
+                          <view>
+                            <text class="u-order-title">{{item.stowageWarehouseName}}</text>
+                            <u-tag v-if="item.routeSort===0||item.routeSort===127" size="mini" :text="item.routeSort===0?'起点':item.routeSort===127?'终点':''"></u-tag>
+                          </view>
+                          <view class="u-order-desc">{{item.remark?item.remark:''}}</view>
+                          <view class="u-order-time">{{item.updateTime?item.updateTime:''}}</view>
+                        </u-col>
+                        <u-col :span="3">
+                          <u-button v-if="findFirst(item.routeId)&&stowageStatus==3" @click="arrival(item.routeId)" size="mini" type="success">到站</u-button>
+                        </u-col>
+                      </u-row>
+                    </view>
+                  </template>
+                </u-time-line-item>
+              </uni-list-item>
+            </uni-list>
+            -->
             <view class="time-line-item" v-for="(item,index) in rows">
               <u-time-line-item :key="index" nodeTop="0">
                 <template v-slot:node>
@@ -19,19 +50,15 @@
                   <view @tap.stop="stop">
                     <u-row>
                       <u-col :span="9">
-                        <view class="u-order-title">
-                          <view v-if="item.routeSort===0||item.routeSort===127">
-                            <u-tag size="mini" :text="item.routeSort===0?'起点':item.routeSort===127?'终点':''"></u-tag>
-                          </view>
-                          <view>
-                            &nbsp;{{item.stowageWarehouseName}}
-                          </view>
+                        <view>
+                          <text class="u-order-title">{{item.stowageWarehouseName}}</text>
+                          <u-tag v-if="item.routeSort===0||item.routeSort===127" size="mini" :text="item.routeSort===0?'起点':item.routeSort===127?'终点':''"></u-tag>
                         </view>
                         <view class="u-order-desc">{{item.remark?item.remark:''}}</view>
                         <view class="u-order-time">{{item.updateTime?item.updateTime:''}}</view>
                       </u-col>
                       <u-col :span="3">
-                          <u-button v-if="findFirst(item.routeId)" @click="arrival(item.routeId)" size="mini" type="success">到站</u-button>
+                          <u-button v-if="findFirst(item.routeId)&&stowageStatus==3" @click="arrival(item.routeId)" size="mini" type="success">到站</u-button>
                       </u-col>
                     </u-row>
                   </view>
@@ -57,6 +84,7 @@ export default {
   data() {
     return {
       stowageId:null,
+      stowageStatus:null,
       markPosition:false,
       mapOn:false,
       tabList:[
@@ -72,7 +100,6 @@ export default {
       current: 0,
       swiperCurrent: 0,
       tabsHeight: 0,
-      stowageStatusOptions: [],
       // 运单配载线路表格数据
       WmsStowageRouteList: [],
       dx: 0,
@@ -87,8 +114,8 @@ export default {
     }
   },
   onLoad(options) {
-    const {stowageId } = options
-    if (!stowageId){
+    const {stowageId,stowageStatus } = options
+    if (!stowageId||!stowageStatus){
       uni.showToast({
         title: '系统繁忙',
         duration: 2000,
@@ -97,11 +124,10 @@ export default {
       uni.navigateBack();
     }
     this.stowageId = stowageId;
+    this.stowageStatus = stowageStatus;
+    console.log(options)
     this.init()
     this.getDictDataMethods()
-    // this.getOrderList(0);
-    // this.getOrderList(1);
-    // this.getOrderList(2);
   },
   onPullDownRefresh() {
     this.init()
@@ -122,17 +148,10 @@ export default {
       this.getData()
     },
     getDictDataMethods() {
-      this.$u.api.getDictDataList( 'wms_stowage_status' ).then( res => {
-        this.stowageStatusOptions = res
-      } )
     },
     // 页面数据
     getOrderList( idx ) {
       return this.missionList[idx]
-    },
-    // tab栏切换
-    jumpMapPage(){
-
     },
     findFirst(routeId){
       const first = this.rows.find(i=>i.routeStatus=='0');
@@ -165,7 +184,12 @@ export default {
               console.log(res)
             }).catch(res=>{
               that.markPosition = !that.markPosition
-              that.$u.toast('已开启虚拟定位以通过验证',3333);
+              that.$refs.uTips.show({
+                title: '已开启虚拟定位以通过验证',
+                type: 'warning',
+                duration: '3333'
+              })
+              // that.$u.toast('已开启虚拟定位以通过验证',3333);
             })
           }
         } )
@@ -177,6 +201,9 @@ export default {
         this.mapOn = !this.mapOn;
       }
     },
+    stop(){
+      console.log('stop')
+    },
     transition( { detail: { dx } } ) {
       this.$refs.tabs.setDx( dx )
     },
@@ -184,28 +211,6 @@ export default {
       this.$refs.tabs.setFinishCurrent( current )
       this.swiperCurrent = current
       this.current = current
-    },
-    confirmMission( stowageId ) {
-      console.log( 'confirmMission', stowageId )
-    },
-    // 类型字典翻译
-    stowageStatusFormat( key ) {
-      return selectDictLabel( this.stowageStatusOptions, key )
-    },
-    stowageStatusTagFormat( stowageStatus ) {
-      if ( stowageStatus == '0' ) {
-        return 'info'
-      } else if ( stowageStatus == '1' ) {
-        return 'warning'
-      } else if ( stowageStatus == '2' ) {
-        return 'warning'
-      } else if ( stowageStatus == '3' ) {
-        return 'success'
-      } else if ( stowageStatus == '4' ) {
-        return 'info'
-      } else if ( stowageStatus == '-1' ) {
-        return 'danger'
-      }
     },
   }
 }
@@ -249,6 +254,7 @@ page {
 .u-order-title {
   color: #333333;
   font-weight: bold;
+  margin-right: 5rpx;
   font-size: 32rpx;
 }
 .u-order-title.unacive {

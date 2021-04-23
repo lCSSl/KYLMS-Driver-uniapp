@@ -7,176 +7,168 @@
       </view>
       <swiper :current="swiperCurrent" class="swiper-box" @animationfinish="animationfinish" @transition="transition">
         <swiper-item class="swiper-item">
-          <scroll-view scroll-y style="height: 100%;width: 100%;" @scrolltolower="reachBottom">
-            <view v-if="missionList[0].length>0" class="page-box">
-              <view v-for="(res, index) in missionList[0]" :key="index" class="order">
-                <view class="top">
-                  <view class="left">
-                    <u-icon :size="30" color="rgb(94,94,94)" name="home"></u-icon>
-                    <view class="store">
-                      {{ res.departureAddress.province.substr(0, res.departureAddress.province.length - 1)}}
-                      {{'-'+res.departureAddress.city.substr(0, res.departureAddress.city.length - 1) }}
-                      往
-                      {{ res.destinationAddress.province.substr(0, res.destinationAddress.province.length - 1)}}
-                      {{'-'+res.destinationAddress.city.substr(0, res.destinationAddress.city.length - 1) }}
-                    </view>
-                    <u-icon :size="26" color="rgb(203,203,203)" name="arrow-right"></u-icon>
+          <view v-if="missionList[0].length>0" class="page-box">
+            <view v-for="(res, index) in missionList[0]" :key="index" class="order">
+              <view class="top">
+                <view class="left">
+                  <u-icon :size="30" color="rgb(94,94,94)" name="home"></u-icon>
+                  <view class="store">
+                    {{ res.departureAddress.province.substr(0, res.departureAddress.province.length - 1)}}
+                    {{'-'+res.departureAddress.city.substr(0, res.departureAddress.city.length - 1) }}
+                    往
+                    {{ res.destinationAddress.province.substr(0, res.destinationAddress.province.length - 1)}}
+                    {{'-'+res.destinationAddress.city.substr(0, res.destinationAddress.city.length - 1) }}
                   </view>
-                  <view class="content">
-                  </view>
-                  <view class="right">
-                    <u-tag :text="stowageStatusFormat(res.stowageStatus)"
-                           :type="stowageStatusTagFormat(res.stowageStatus)"
-                           border-color="#ffffff"/>
-                  </view>
+                  <u-icon :size="26" color="rgb(203,203,203)" name="arrow-right"></u-icon>
                 </view>
-                <view class="item">
-                  <view class="content">
-                    <view class="type">{{ res.departureName }}</view>
-                    <view class="type">{{ res.destinationName }}</view>
-                  </view>
+                <view class="content">
                 </view>
-                <view class="total">
-                  {{res.routeCount>0?'共'+res.routeCount+'站':''}}
+                <view class="right">
+                  <u-tag :text="stowageStatusFormat(res.stowageStatus)"
+                         :type="stowageStatusTagFormat(res.stowageStatus)"
+                         border-color="#ffffff"/>
                 </view>
-                <view class="bottom">
-                  <view class="bottom-left">
-                    <u-icon color="rgb(203,203,203)" name="more-dot-fill"></u-icon>
+              </view>
+              <view class="item">
+                <view class="content">
+                  <view class="type">{{ res.departureName }}</view>
+                  <view class="type">{{ res.destinationName }}</view>
+                </view>
+              </view>
+              <view class="total">
+                {{res.routeCount>0?'共'+res.routeCount+'站':''}}
+              </view>
+              <view class="bottom">
+                <view class="bottom-left">
+                  <u-icon color="rgb(203,203,203)" name="more-dot-fill"></u-icon>
+                </view>
+                <view class="bottom-right">
+                  <view class="btn">
+                    <u-button type="info" :custom-style="customBtnStyle"
+                              size="mini" shape="circle"
+                              :hair-line="false" ripple plain
+                              @click="jumpRoutePage(res.stowageId,res.stowageStatus)">
+                      查看
+                    </u-button>
                   </view>
-                  <view class="bottom-right">
-                    <view class="btn">
-                      <u-button type="info" :custom-style="customBtnStyle"
-                                size="mini" shape="circle"
-                                :hair-line="false" ripple plain
-                                @click="jumpRoutePage(res.stowageId)">
-                        查看
-                      </u-button>
-                    </view>
-                    <view v-if="res.stowageStatus==='2'" class="btn" >
-                      <u-button type="primary" hair-line size="mini"
-                                :custom-style="customBtnStyle" shape="circle"
-                                ripple plain @click="confirmMission(res.stowageId)">确认</u-button>
-                    </view>
+                  <view v-if="res.stowageStatus==='2'" class="btn" >
+                    <u-button type="primary" hair-line size="mini"
+                              :custom-style="customBtnStyle" shape="circle"
+                              ripple plain @click="confirmMission(res.stowageId)">确认</u-button>
                   </view>
                 </view>
               </view>
             </view>
-            <view v-else class="u-demo-area">
-              <u-empty mode="data"></u-empty>
-            </view>
-          </scroll-view>
+          </view>
+          <view v-else class="u-demo-area">
+            <u-empty mode="data"></u-empty>
+          </view>
         </swiper-item>
         <swiper-item class="swiper-item">
-          <scroll-view scroll-y style="height: 100%;width: 100%;" @scrolltolower="reachBottom">
-            <scroll-view scroll-y style="height: 100%;width: 100%;" @scrolltolower="reachBottom">
-              <view v-if="missionList[1].length>0" class="page-box">
-                <view v-for="(res ,index) in missionList[1]" :key="index" class="order">
-                  <view class="top">
-                    <view class="left">
-                      <u-icon :size="30" color="rgb(94,94,94)" name="home"></u-icon>
-                      <view class="store">
-                        {{ res.departureAddress.province.substr(0, res.departureAddress.province.length - 1)}}
-                        {{'-'+res.departureAddress.city.substr(0, res.departureAddress.city.length - 1) }}
-                        往
-                        {{ res.destinationAddress.province.substr(0, res.destinationAddress.province.length - 1)}}
-                        {{'-'+res.destinationAddress.city.substr(0, res.destinationAddress.city.length - 1) }}
-                      </view>
-                      <u-icon :size="26" color="rgb(203,203,203)" name="arrow-right"></u-icon>
-                    </view>
-                    <view class="content">
-                    </view>
-                    <view class="right">
-                      <u-tag :text="stowageStatusFormat(res.stowageStatus)"
-                             :type="stowageStatusTagFormat(res.stowageStatus)"
-                             border-color="#ffffff"/>
-                    </view>
+          <view v-if="missionList[1].length>0" class="page-box">
+            <view v-for="(res ,index) in missionList[1]" :key="index" class="order">
+              <view class="top">
+                <view class="left">
+                  <u-icon :size="30" color="rgb(94,94,94)" name="home"></u-icon>
+                  <view class="store">
+                    {{ res.departureAddress.province.substr(0, res.departureAddress.province.length - 1)}}
+                    {{'-'+res.departureAddress.city.substr(0, res.departureAddress.city.length - 1) }}
+                    往
+                    {{ res.destinationAddress.province.substr(0, res.destinationAddress.province.length - 1)}}
+                    {{'-'+res.destinationAddress.city.substr(0, res.destinationAddress.city.length - 1) }}
                   </view>
-                  <view class="item">
-                    <view class="content">
-                      <view class="type">{{ res.departureName }}</view>
-                      <view class="type">{{ res.destinationName }}</view>
-                    </view>
-                  </view>
-                  <view class="total">
-                    {{res.routeCount>0?'共'+res.routeCount+'站':''}}
-                  </view>
-                  <view class="bottom">
-                    <view class="bottom-left">
-                      <u-icon color="rgb(203,203,203)" name="more-dot-fill"></u-icon>
-                    </view>
-                    <view class="bottom-right">
-                      <view class="btn">
-                        <u-button type="info" :custom-style="customBtnStyle"
-                                  size="mini" shape="circle"
-                                  :hair-line="false" ripple plain
-                                  @click="jumpRoutePage(res.stowageId)">
-                          查看
-                        </u-button>
-                      </view>
-                    </view>
+                  <u-icon :size="26" color="rgb(203,203,203)" name="arrow-right"></u-icon>
+                </view>
+                <view class="content">
+                </view>
+                <view class="right">
+                  <u-tag :text="stowageStatusFormat(res.stowageStatus)"
+                         :type="stowageStatusTagFormat(res.stowageStatus)"
+                         border-color="#ffffff"/>
+                </view>
+              </view>
+              <view class="item">
+                <view class="content">
+                  <view class="type">{{ res.departureName }}</view>
+                  <view class="type">{{ res.destinationName }}</view>
+                </view>
+              </view>
+              <view class="total">
+                {{res.routeCount>0?'共'+res.routeCount+'站':''}}
+              </view>
+              <view class="bottom">
+                <view class="bottom-left">
+                  <u-icon color="rgb(203,203,203)" name="more-dot-fill"></u-icon>
+                </view>
+                <view class="bottom-right">
+                  <view class="btn">
+                    <u-button type="info" :custom-style="customBtnStyle"
+                              size="mini" shape="circle"
+                              :hair-line="false" ripple plain
+                              @click="jumpRoutePage(res.stowageId,res.stowageStatus)">
+                      查看
+                    </u-button>
                   </view>
                 </view>
               </view>
-              <view v-else class="u-demo-area">
-                <u-empty mode="data"></u-empty>
-              </view>
-            </scroll-view>
-          </scroll-view>
+            </view>
+          </view>
+          <view v-else class="u-demo-area">
+            <u-empty mode="data"></u-empty>
+          </view>
         </swiper-item>
         <swiper-item class="swiper-item">
-          <scroll-view scroll-y style="height: 100%;width: 100%;" @scrolltolower="reachBottom">
-            <view v-if="missionList[2].length>0" class="page-box">
-              <view v-for="(res, index) in missionList[2]" :key="index" class="order">
-                <view class="top">
-                  <view class="left">
-                    <u-icon :size="30" color="rgb(94,94,94)" name="home"></u-icon>
-                    <view class="store">
-                      {{ res.departureAddress.province.substr(0, res.departureAddress.province.length - 1)}}
-                      {{'-'+res.departureAddress.city.substr(0, res.departureAddress.city.length - 1) }}
-                      往
-                      {{ res.destinationAddress.province.substr(0, res.destinationAddress.province.length - 1)}}
-                      {{'-'+res.destinationAddress.city.substr(0, res.destinationAddress.city.length - 1) }}
-                    </view>
-                    <u-icon :size="26" color="rgb(203,203,203)" name="arrow-right"></u-icon>
+          <view v-if="missionList[2].length>0" class="page-box">
+            <view v-for="(res, index) in missionList[2]" :key="index" class="order">
+              <view class="top">
+                <view class="left">
+                  <u-icon :size="30" color="rgb(94,94,94)" name="home"></u-icon>
+                  <view class="store">
+                    {{ res.departureAddress.province.substr(0, res.departureAddress.province.length - 1)}}
+                    {{'-'+res.departureAddress.city.substr(0, res.departureAddress.city.length - 1) }}
+                    往
+                    {{ res.destinationAddress.province.substr(0, res.destinationAddress.province.length - 1)}}
+                    {{'-'+res.destinationAddress.city.substr(0, res.destinationAddress.city.length - 1) }}
                   </view>
-                  <view class="content">
-                  </view>
-                  <view class="right">
-                    <u-tag :text="stowageStatusFormat(res.stowageStatus)"
-                           :type="stowageStatusTagFormat(res.stowageStatus)"
-                           border-color="#ffffff"/>
-                  </view>
+                  <u-icon :size="26" color="rgb(203,203,203)" name="arrow-right"></u-icon>
                 </view>
-                <view class="item">
-                  <view class="content">
-                    <view class="type">{{ res.departureName }}</view>
-                    <view class="type">{{ res.destinationName }}</view>
-                  </view>
+                <view class="content">
                 </view>
-                <view class="total">
-                  {{res.routeCount>0?'共'+res.routeCount+'站':''}}
+                <view class="right">
+                  <u-tag :text="stowageStatusFormat(res.stowageStatus)"
+                         :type="stowageStatusTagFormat(res.stowageStatus)"
+                         border-color="#ffffff"/>
                 </view>
-                <view class="bottom">
-                  <view class="bottom-left">
-                    <u-icon color="rgb(203,203,203)" name="more-dot-fill"></u-icon>
-                  </view>
-                  <view class="bottom-right">
-                    <view class="btn">
-                      <u-button type="info" :custom-style="customBtnStyle"
-                                size="mini" shape="circle"
-                                :hair-line="false" ripple plain
-                                @click="jumpRoutePage(res.stowageId)">
-                        查看
-                      </u-button>
-                    </view>
+              </view>
+              <view class="item">
+                <view class="content">
+                  <view class="type">{{ res.departureName }}</view>
+                  <view class="type">{{ res.destinationName }}</view>
+                </view>
+              </view>
+              <view class="total">
+                {{res.routeCount>0?'共'+res.routeCount+'站':''}}
+              </view>
+              <view class="bottom">
+                <view class="bottom-left">
+                  <u-icon color="rgb(203,203,203)" name="more-dot-fill"></u-icon>
+                </view>
+                <view class="bottom-right">
+                  <view class="btn">
+                    <u-button type="info" :custom-style="customBtnStyle"
+                              size="mini" shape="circle"
+                              :hair-line="false" ripple plain
+                              @click="jumpRoutePage(res.stowageId,res.stowageStatus)">
+                      查看
+                    </u-button>
                   </view>
                 </view>
               </view>
             </view>
-            <view v-else class="u-demo-area">
-              <u-empty mode="data"></u-empty>
-            </view>
-          </scroll-view>
+          </view>
+          <view v-else class="u-demo-area">
+            <u-empty mode="data"></u-empty>
+          </view>
         </swiper-item>
       </swiper>
     </view>
@@ -217,9 +209,6 @@ export default {
   onLoad() {
     this.getData()
     this.getDictDataMethods()
-    // this.getOrderList(0);
-    // this.getOrderList(1);
-    // this.getOrderList(2);
   },
   onPullDownRefresh() {
     this.getData()
@@ -244,7 +233,6 @@ export default {
     getData() {
       uni.showLoading()
       this.$u.api.getDriverMission().then(res=>{
-        console.log('getDriverMission')
         this.dataList = res
         this.missionList[0].length = 0
         this.missionList[1].length = 0
@@ -272,45 +260,26 @@ export default {
     getOrderList( idx ) {
       return this.missionList[idx]
     },
-    reachBottom() {
-      // 此tab为空数据
-      console.log( 'reachBottom' )
-      // if(this.current != 2) {
-      //   this.loadStatus.splice(this.current,1,"loading")
-      //   setTimeout(() => {
-      //     this.getOrderList(this.current);
-      //   }, 1200);
-      // }
-    },
-
-
     // 总价
-    totalPrice( item ) {
-      let price = 0
-      item.map( val => {
-        price += parseFloat( val.price )
-      } )
-      return price.toFixed( 2 )
-    },
-    // 总件数
-    totalNum( item ) {
-      let num = 0
-      item.map( val => {
-        num += val.number
-      } )
-      return num
-    },
     // tab栏切换
     change( index ) {
       this.swiperCurrent = index
     },
-    jumpRoutePage( stowageId ) {
+    jumpRoutePage( stowageId,stowageStatus ) {
+      console.log(stowageStatus)
       uni.navigateTo({
-        url:'/pages/components/stowageRouteView/index?stowageId='+stowageId,
+        url:`/pages/components/stowageRouteView/index?stowageId=${stowageId}&stowageStatus=${stowageStatus}`,
       })
     },
     confirmMission( stowageId ) {
-      console.log( 'confirmMission', stowageId )
+      // uni.showLoading()
+      // this.$u.api.departure( stowageId ).then( res => {
+      //
+      // } ).catch( () => {
+      // } ).finally( () => {
+      //   this.getData()
+      // } )
+      uni.$emit('driverMission');
     },
     transition( { detail: { dx } } ) {
       this.$refs.tabs.setDx( dx )
@@ -497,6 +466,10 @@ page {
 }
 .swiper-item {
   height: 100%;
+}
+.page-box {
+  height: 100%;
+  width: 100%;
 }
 .u-demo-area {
   height: 100%;

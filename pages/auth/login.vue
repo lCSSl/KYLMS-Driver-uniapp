@@ -13,7 +13,7 @@
         <u-input v-model="form.username" placeholder="请输入用户名" type="text"/>
         <u-input v-model="form.password" placeholder="请输入密码" type="password"/>
       </view>
-      <button :style="[inputStyle]" class="getCaptcha" @tap="submit">{{formType.btnText}}</button>
+      <u-button type="primary" @click="submit">{{formType.btnText}}</u-button>
       <view class="alternative">
         <view class="password" @tap="changeFormType">{{formType.text}}</view>
         <view class="issue">遇到问题</view>
@@ -36,8 +36,8 @@
       </view>
       <view class="hint">
         登录代表同意
-        <text class="link">美团点评用户协议、隐私政策，</text>
-        并授权使用您的美团点评账号信息（如昵称、头像、收获地址）以便您统一管理
+        <text class="link">用户协议、隐私政策，</text>
+        并授权使用您的账号信息（如昵称、头像、收获地址）以便您统一管理
       </view>
     </view>
 
@@ -100,14 +100,6 @@ export default {
     this.showTips()
   },
   computed: {
-    inputStyle() {
-      let style = {}
-      if ( this.form.phonenumber ) {
-        style.color = '#fff'
-        style.backgroundColor = this.$u.color['warning']
-      }
-      return style
-    }
   },
   methods: {
     showTips() {
@@ -202,7 +194,7 @@ export default {
       margin-top: 8rpx;
     }
     .getCaptcha {
-      background-color: rgb(253, 243, 208);
+      background-color: $u-type-primary;
       color: $u-tips-color;
       border: none;
       font-size: 30rpx;

@@ -13,7 +13,9 @@ if ( process.env.NODE_ENV === 'production' ) {
 	// baseUrl = 'http://kaiyu.wicp.vip:39592'
 	baseUrl = 'http://tunnel.kaiyu.work:55938'
 }
-
+const there = {
+	$u:null
+}
 const install = ( Vue, vm ) => {
 	Vue.prototype.$u.http.setConfig( {
 		baseUrl,
@@ -70,24 +72,14 @@ const install = ( Vue, vm ) => {
 					url: '/pages/auth/login?navigateType=2'
 				})
 			} else if (code === 500) {
-				uni.showToast({
-					title: msg,
-					icon: 'none',
-					duration: 2000,
-					position: 'top',
-				});
+				vm.$u.toast(msg,2000);
 			}else if (code === 403) {
 				uni.navigateTo({
 					url: '/pages/auth/login?navigateType=3'
 				})
 			}
 			else if (code !== 200) {
-				uni.showToast({
-					title: msg,
-					icon: 'none',
-					duration: 2000,
-					position: 'top',
-				});
+				vm.$u.toast(msg,2000);
 			}
 			return false
 		}
